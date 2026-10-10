@@ -141,7 +141,69 @@ h1,h2,h3{font-family:"Playfair Display",Georgia,"Times New Roman",serif}
 .day .ev{align-items:baseline;padding:10px 0}
 .day .t{font-size:1.05rem}
 
+/* ============ Мобільне меню ============ */
+.nav-toggle{display:none;background:none;border:1px solid var(--line);border-radius:10px;
+  width:44px;height:44px;cursor:pointer;flex:0 0 auto;margin-left:auto;
+  flex-direction:column;align-items:center;justify-content:center;gap:5px}
+.nav-toggle span{display:block;width:22px;height:2.5px;background:var(--ink);border-radius:2px;
+  transition:transform .25s,opacity .25s}
+.nav-toggle.open span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
+.nav-toggle.open span:nth-child(2){opacity:0}
+.nav-toggle.open span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
+@media(max-width:640px){
+  .nav-toggle{display:flex}
+  .site-header .wrap{flex-wrap:wrap}
+  .nav{display:none;flex-basis:100%;flex-direction:column;gap:2px;
+    padding:8px 0 12px;margin:0}
+  .nav.open{display:flex}
+  .nav a{padding:12px 14px;font-size:1.02rem;border-radius:10px}
+  .nav a.active{background:var(--saffron-soft)}
+}
+
 /* Футер з навігацією */
 footer nav{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;margin:10px 0}
 footer nav a{color:var(--saffron-dark);text-decoration:none;font-size:.92rem}
 footer nav a:hover{text-decoration:underline}
+
+/* ============ Модальне вікно пожертв (WayForPay в айфреймі) ============ */
+.donate-modal{position:fixed;inset:0;z-index:300;display:none;align-items:center;justify-content:center;
+  background:rgba(30,20,10,.72);backdrop-filter:blur(3px);padding:16px}
+.donate-modal.open{display:flex;animation:avCardIn .22s ease-out}
+.donate-modal-box{background:var(--card);border-radius:18px;max-width:560px;width:100%;
+  max-height:92vh;display:flex;flex-direction:column;overflow:hidden;
+  box-shadow:0 24px 70px rgba(0,0,0,.35)}
+.donate-modal-head{display:flex;align-items:center;justify-content:space-between;
+  padding:14px 18px;border-bottom:1px solid var(--line);background:var(--saffron-soft)}
+.donate-modal-head b{font-family:"Playfair Display",Georgia,serif;font-size:1.15rem;color:var(--saffron-dark)}
+.donate-modal-close{background:none;border:none;font-size:1.7rem;cursor:pointer;color:var(--muted);
+  line-height:1;padding:4px 8px;border-radius:8px}
+.donate-modal-close:hover{background:var(--line);color:var(--ink)}
+.donate-modal-frame{position:relative;flex:1;min-height:480px;background:#fff}
+.donate-modal-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.donate-modal-loader{position:absolute;inset:0;display:flex;flex-direction:column;gap:12px;
+  align-items:center;justify-content:center;background:#fff;color:var(--muted);font-size:.95rem}
+.donate-modal-loader .spin{width:38px;height:38px;border-radius:50%;
+  border:4px solid var(--line);border-top-color:var(--saffron);animation:donSpin 1s linear infinite}
+@keyframes donSpin{to{transform:rotate(360deg)}}
+.donate-modal-foot{padding:10px 18px;border-top:1px solid var(--line);font-size:.82rem;
+  color:var(--muted);text-align:center}
+@media(max-width:640px){.donate-modal{padding:8px}.donate-modal-frame{min-height:70vh}}
+@media(prefers-reduced-motion:reduce){.donate-modal.open{animation:none}.donate-modal-loader .spin{animation-duration:2s}}
+
+/* Підписи до кнопок пожертв */
+.donate-hint{text-align:center;color:var(--muted);font-size:.9rem;margin:-14px 0 20px}
+
+/* Клікабельні QR */
+.qr a{display:block;cursor:zoom-in}
+.qr a img{transition:transform .2s}
+.qr a:hover img{transform:scale(1.04)}
+
+/* Копіювання: всі поля */
+.bank .row .copy{white-space:nowrap}
+
+/* Мобільні реквізити */
+@media(max-width:640px){
+  .bank .row{flex-wrap:wrap}
+  .bank .val{flex:1 1 100%;text-align:left;margin:4px 0}
+  .bank .copy{align-self:flex-end}
+}
