@@ -10,32 +10,46 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css">
-<link rel="stylesheet" href="assets/guide.css">
-<link rel="icon" href="assets/logo.jpg">
+<link rel="stylesheet" href="/assets/style.css">
+<link rel="stylesheet" href="/assets/avatar.css">
+<link rel="icon" href="/assets/logo.jpg">
 </head>
 <body>
 
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="./"><img src="assets/logo.jpg" alt="ІСККОН Чернівці"><b>ІСККОН ЧЕРНІВЦІ</b></a>
-    <nav class="nav">
-      <a href="./">Головна</a>
-      <a href="courses">Навчання</a>
-      <a href="food" class="active">Їжа життя</a>
-      <a href="donation">Пожертви</a>
+    <a class="brand" href="/"><img src="/assets/logo.jpg" alt="ІСККОН Чернівці"><b>ІСККОН ЧЕРНІВЦІ</b></a>
+    <button class="nav-toggle" aria-label="Меню" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav" id="mainNav">
+      <a href="/">Головна</a>
+      <a href="/courses">Навчання</a>
+      <a href="/food" class="active">Їжа життя</a>
+      <a href="/donation">Пожертви</a>
     </nav>
   </div>
 </header>
 
 <div class="hero">
   <h1>🍲 Їжа життя Чернівці</h1>
-  <p class="lede">Міжнародна благодійна місія: гарячі вегетаріанські обіди для кожного,
-    хто потребує підтримки. Понад 30 років ділимося найпростішим —
-    їжею, приготованою з душею.</p>
+  <p class="lede">Готуємо і годуємо. Із любов'ю до людей 💛<br>
+    Гарячі вегетаріанські обіди щосуботи о 14:00 на Соборній площі.</p>
 </div>
 
 <div class="wrap">
+  <section class="block">
+    <div class="card">
+      <h3 style="text-align:center;margin-bottom:12px">Із рук у руки. Із серця в серце.</h3>
+      <p style="text-align:center;max-width:640px;margin:0 auto">Ми натхненні творити й віддавати тим, у кого є потреба
+        в любові, теплій їжі та турботі. А правда в тім, що потребують цього всі…</p>
+      <div class="grid2" style="margin-top:18px;text-align:center">
+        <div><div style="font-size:1.8rem;font-weight:700;color:var(--saffron-dark)">1974</div>
+          <div style="color:var(--muted);font-size:.9rem">рік заснування місії<br>Прабгупадою</div></div>
+        <div><div style="font-size:1.8rem;font-weight:700;color:var(--saffron-dark)">5 млн+</div>
+          <div style="color:var(--muted);font-size:.9rem">гарячих обідів<br>роздано в Україні</div></div>
+      </div>
+    </div>
+  </section>
+
   <section class="block">
     <div class="card course-card">
       <img src="assets/ffl-cv-1.jpeg" alt="Роздача гарячих обідів" style="width:100%;max-height:380px;object-fit:cover;border-radius:12px">
@@ -44,6 +58,20 @@
          🕒 <b>Коли:</b> кожну суботу о <b>14:00</b></p>
       <p>Наші обіди з любов'ю готуються для всіх, хто потребує підтримки, турботи
         або просто теплого спілкування. Ми раді кожному!</p>
+      <p style="color:var(--muted);font-size:.92rem">У 2022 році ми годували переселенців щодня —
+        50–70 порцій на день у 2–3 точках міста. Сьогодні — щосуботи, і ми ростемо.</p>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>Підтримати «Їжу життя»</h2>
+    <div class="card" style="text-align:center">
+      <p>Кожна гривня стає гарячим обідом для того, хто потребує цього сьогодні.</p>
+      <div class="donate-btns">
+        <a class="btn btn-primary" href="https://send.monobank.ua/jar/8cZpfkd4Xh"
+           target="_blank" rel="noopener">💳 Monobank-банка</a>
+        <a class="btn btn-ghost" href="/donation">🙏 Інші способи</a>
+      </div>
     </div>
   </section>
 
@@ -69,6 +97,10 @@
     <div class="card" style="text-align:center">
       <p>📞 <b>Роман Гунчак:</b> <a href="tel:+380503740334" style="font-size:1.2rem;font-weight:700">050-374-0334</a><br>
       <span style="color:var(--muted)">Telegram, Viber, WhatsApp</span></p>
+      <div class="socials">
+        <a href="https://www.instagram.com/ffl.cv.ua/" target="_blank" rel="noopener">Instagram «Їжа життя»</a>
+        <a href="https://www.facebook.com/food.for.life.chernivtsi" target="_blank" rel="noopener">Facebook</a>
+      </div>
     </div>
   </section>
 </div>
@@ -86,7 +118,7 @@
   </div>
 </footer>
 
-<script src="assets/site.js"></script>
-<script src="assets/guide.js"></script>
+<script src="/assets/site.js"></script>
+<script src="/assets/avatar.js"></script>
 </body>
 </html>
