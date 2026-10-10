@@ -1,1 +1,138 @@
-const I18N={uk:{},en:{},ro:{}};let currentLang=localStorage.getItem('lang')||'uk';function setLang(l){currentLang=l;localStorage.setItem('lang',l);document.documentElement.lang=l;document.querySelectorAll('.lang-btn').forEach(b=>b.classList.toggle('active',b.dataset.lang===l));}document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.lang-btn').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lang)));setLang(currentLang);});
+/* i18n engine for ISKCON Chernivtsi site.
+   Dictionaries: I18N in assets/i18n-dict.js (keys = normalized Ukrainian source).
+   Features: localStorage persistence, ?lang= param, dynamic <html lang>,
+   text nodes + alt/title/aria-label/data-caption/placeholder + meta tags,
+   MutationObserver for dynamic content (avatar chat). */
+(function(){
+"use strict";
+
+var ATTRS = ["alt","title","aria-label","data-caption","placeholder"];
+var _busy = false;
+
+function norm(s){ return String(s).replace(/\s+/g," ").trim(); }
+function dict(){ return (typeof I18N !== "undefined" && I18N[currentLang]) || {}; }
+
+var store = null;
+try { store = localStorage.getItem("lang"); } catch(e){}
+var qs = null;
+try { qs = new URLSearchParams(location.search).get("lang"); } catch(e){}
+var currentLang = (qs && typeof I18N !== "undefined" && I18N[qs]) ? qs : (store || "uk");
+if (currentLang !== "uk" && currentLang !== "ro" && currentLang !== "en") currentLang = "uk";
+
+function t(uk){
+  var d = dict();
+  var k = norm(uk);
+  return Object.prototype.hasOwnProperty.call(d, k) ? d[k] : null;
+}
+
+function translateTextNode(node){
+  if (node._i18nOrig === undefined) node._i18nOrig = node.nodeValue;
+  var tr = t(node._i18nOrig);
+  var target = tr !== null ? tr : (currentLang === "uk" ? node._i18nOrig : node._i18nOrig);
+  if (currentLang === "uk") target = node._i18nOrig;
+  if (node.nodeValue !== target) node.nodeValue = target;
+}
+
+function translateEl(el){
+  if (el.nodeType === 3) {
+    if (norm(el.nodeValue)) translateTextNode(el);
+    return;
+  }
+  if (el.nodeType !== 1) return;
+  var tag = el.tagName;
+  if (tag === "SCRIPT" || tag === "STYLE" || tag === "NOSCRIPT") return;
+  for (var i = 0; i < ATTRS.length; i++){
+    var a = ATTRS[i];
+    if (el.hasAttribute(a)){
+      var dk = "_i18n_" + a;
+      if (el[dk] === undefined) el[dk] = el.getAttribute(a);
+      var tr = t(el[dk]);
+      var target = currentLang === "uk" ? el[dk] : (tr !== null ? tr : el[dk]);
+      if (el.getAttribute(a) !== target) el.setAttribute(a, target);
+    }
+  }
+  var child = el.firstChild;
+  while (child){ translateEl(child); child = child.nextSibling; }
+}
+
+function translateMeta(){
+  var d = dict();
+  function setMeta(sel, attr){
+    var m = document.querySelector(sel);
+    if (!m) return;
+    var dk = "_i18n_m";
+    if (m[dk] === undefined) m[dk] = m.getAttribute(attr) || "";
+    var tr = t(m[dk]);
+    var target = currentLang === "uk" ? m[dk] : (tr !== null ? tr : m[dk]);
+    if (m.getAttribute(attr) !== target) m.setAttribute(attr, target);
+  }
+  var title = document.querySelector("title");
+  if (title && title.firstChild){
+    if (title._i18nOrig === undefined) title._i18nOrig = title.firstChild.nodeValue;
+    var tr = t(title._i18nOrig);
+    var tt = currentLang === "uk" ? title._i18nOrig : (tr !== null ? tr : title._i18nOrig);
+    if (title.firstChild.nodeValue !== tt) title.firstChild.nodeValue = tt;
+  }
+  setMeta('meta[name="description"]', "content");
+  setMeta('meta[property="og:title"]', "content");
+  setMeta('meta[property="og:description"]', "content");
+  setMeta('meta[name="twitter:title"]', "content");
+  setMeta('meta[name="twitter:description"]', "content");
+  var loc = document.querySelector('meta[property="og:locale"]');
+  if (loc) loc.setAttribute("content", currentLang === "ro" ? "ro_RO" : (currentLang === "en" ? "en_US" : "uk_UA"));
+}
+
+function ensureHreflang(){
+  if (document.querySelector('link[rel="alternate"][hreflang]')) return;
+  var base = location.origin + location.pathname;
+  [["uk","uk"],["ro","ro"],["en","en"],["x-default","uk"]].forEach(function(p){
+    var l = document.createElement("link");
+    l.rel = "alternate"; l.hreflang = p[0];
+    l.href = base + "?lang=" + p[1];
+    document.head.appendChild(l);
+  });
+}
+
+function translatePage(){
+  if (_busy) return; _busy = true;
+  try {
+    translateEl(document.body);
+    translateMeta();
+    ensureHreflang();
+  } finally { _busy = false; }
+}
+
+function setLang(l){
+  if (typeof I18N !== "undefined" && !I18N[l]) return;
+  currentLang = l;
+  try { localStorage.setItem("lang", l); } catch(e){}
+  document.documentElement.lang = l;
+  document.querySelectorAll(".lang-btn").forEach(function(b){
+    b.classList.toggle("active", b.dataset.lang === l);
+  });
+  translatePage();
+}
+
+var observer = new MutationObserver(function(muts){
+  if (_busy) return;
+  _busy = true;
+  try {
+    muts.forEach(function(m){
+      if (m.type === "characterData"){ translateEl(m.target); return; }
+      m.addedNodes.forEach(function(n){ translateEl(n); });
+    });
+  } finally { _busy = false; }
+});
+
+document.addEventListener("DOMContentLoaded", function(){
+  document.querySelectorAll(".lang-btn").forEach(function(b){
+    b.addEventListener("click", function(){ setLang(b.dataset.lang); });
+  });
+  setLang(currentLang);
+  try {
+    observer.observe(document.body, { childList: true, subtree: true, characterData: true });
+  } catch(e){}
+});
+
+window.__setLang = setLang;
+})();
