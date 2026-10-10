@@ -92,8 +92,8 @@ function ensureHreflang(){
   });
 }
 
-function observeOn(){ try { if (observer) observer.observe(document.body, OBS_OPTS); } catch(e){} }
-function observeOff(){ try { if (observer) observer.disconnect(); } catch(e){} }
+function observeOn(){}
+function observeOff(){}
 
 function translatePage(){
   if (_busy) return; _busy = true;
@@ -120,6 +120,7 @@ function setLang(l){
   translatePage();
 }
 
+/* OBSERVER DISABLED FOR DEBUG
 observer = new MutationObserver(function(muts){
   if (_busy) return;
   _busy = true;
@@ -136,6 +137,7 @@ observer = new MutationObserver(function(muts){
     observeOn();
   }
 });
+*/
 
 document.addEventListener("DOMContentLoaded", function(){
   document.querySelectorAll(".lang-btn").forEach(function(b){
