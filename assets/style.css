@@ -1,7 +1,7 @@
 /* ІСККОН Чернівці — спільні стилі */
 :root{
   --cream:#FDF8EE; --card:#FFFDF7; --line:#EFE3CC;
-  --saffron:#D9820B; --saffron-dark:#B36A06; --saffron-soft:#FBF0DC;
+  --saffron:#D9820B; --saffron-dark:#B36A06; --saffron-soft:#FBF0DC;--saffron-deep:#b45309;
   --ink:#2C2318; --muted:#8A7660; --green:#4E7A3A;
 }
 *{box-sizing:border-box}
