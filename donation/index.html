@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+  <base href="/iskcon-cv-ua/">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Пожертви — ІСККОН Чернівці</title>
+<meta name="description" content="Підтримайте храм ІСККОН у Чернівцях: разова чи регулярна пожертва через WayForPay або банківські реквізити.">
+<meta name="theme-color" content="#D9820B">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/guide.css">
+<link rel="icon" href="assets/logo.jpg">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="assets/logo.jpg" alt="ІСККОН Чернівці"><b>ІСККОН ЧЕРНІВЦІ</b></a>
+    <nav class="nav">
+      <a href="./">Головна</a>
+      <a href="courses">Навчання</a>
+      <a href="food">Їжа життя</a>
+      <a href="donation" class="active">Пожертви</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <h1>🙏 Меценати храму</h1>
+  <p class="lede">Наш храм живе та розвивається виключно завдяки вашій підтримці.
+    Ми безмежно вдячні кожному за щедрість та відкрите серце!</p>
+</div>
+
+<div class="wrap">
+  <section class="block">
+    <h2>Зробити пожертву</h2>
+    <div class="donate-btns">
+      <a class="btn btn-primary" href="https://secure.wayforpay.com/donate/d645a94f6a237"
+         target="_blank" rel="noopener">Разова пожертва</a>
+      <a class="btn btn-ghost" href="https://secure.wayforpay.com/donate/db52afa6592ea"
+         target="_blank" rel="noopener">Регулярна пожертва</a>
+    </div>
+    <div class="qr-row">
+      <div class="qr">
+        <img src="assets/qr-onetime.png" alt="QR-код: разова пожертва">
+        <p>Разова пожертва — наведіть камеру</p>
+      </div>
+      <div class="qr">
+        <img src="assets/qr-regular.png" alt="QR-код: регулярна пожертва">
+        <p>Регулярна пожертва — наведіть камеру</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>На що спрямовуються ваші пожертви</h2>
+    <div class="card">
+      <ul class="tick">
+        <li>🏡 Оренда приміщення</li>
+        <li>💡 Комунальні послуги</li>
+        <li>🍎 Продукти <em>(для приготування прасаду)</em></li>
+        <li>🌸 Квіти <em>(для прикрашання вівтаря та божеств)</em></li>
+        <li>📚 Проповідницькі проєкти та розповсюдження книг</li>
+        <li>🛠️ Господарські та інші поточні витрати</li>
+      </ul>
+      <p>Налаштуйте <b>регулярні щомісячні внески</b> — це допоможе храму стабільно
+        планувати витрати. Або зробіть одноразовий переказ.</p>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>Банківські реквізити</h2>
+    <div class="card bank">
+      <div class="row">
+        <span class="label">IBAN</span>
+        <span class="val" id="iban-val">UA563077700000026007111264936</span>
+        <button class="copy" data-copy="iban-val">Копіювати</button>
+      </div>
+      <div class="row">
+        <span class="label">ЄДРПОУ</span>
+        <span class="val" id="edrpou-val">46285356</span>
+        <button class="copy" data-copy="edrpou-val">Копіювати</button>
+      </div>
+      <div class="row">
+        <span class="label">Одержувач</span>
+        <span class="val">РО «РЕЛІГІЙНА ГРОМАДА СВІДОМОСТІ КРІШНИ В МІСТІ ЧЕРНІВЦІ»</span>
+      </div>
+      <div class="row">
+        <span class="label">Призначення</span>
+        <span class="val">Добровільна пожертва</span>
+      </div>
+    </div>
+    <p class="note">Прозорість: дані організації —
+      <a href="https://opendatabot.ua/c/46285356" target="_blank" rel="noopener">opendatabot.ua</a></p>
+  </section>
+
+  <section class="block">
+    <h2>Контакти</h2>
+    <div class="card" style="text-align:center">
+      <p>📞 <b>Ануґатья д.д.:</b> <a href="tel:+380633203940" style="font-size:1.2rem;font-weight:700">063-320-3940</a><br>
+      <span style="color:var(--muted)">Telegram, Viber, WhatsApp</span></p>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <div class="wrap">
+    <nav>
+      <a href="./">Головна</a>
+      <a href="courses">Навчання</a>
+      <a href="food">Їжа життя</a>
+      <a href="donation">Пожертви</a>
+    </nav>
+    <p>РО «Релігійна громада свідомості Крішни в місті Чернівці» · ЄДРПОУ 46285356</p>
+    <p>вул. Скальда (Комарова), 40А, Чернівці · 063-311-7500</p>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
+
+<script>
+(function(){
+  document.querySelectorAll('.copy').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var text = document.getElementById(btn.getAttribute('data-copy')).textContent;
+      function done(){ btn.textContent = 'Скопійовано ✓'; setTimeout(function(){ btn.textContent = 'Копіювати'; }, 1500); }
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(done).catch(fallback);
+      } else { fallback(); }
+      function fallback(){
+        var ta = document.createElement('textarea');
+        ta.value = text; document.body.appendChild(ta); ta.select();
+        try { document.execCommand('copy'); } catch(e){}
+        document.body.removeChild(ta); done();
+      }
+    });
+  });
+})();
+</script>
+
+<script src="assets/guide.js"></script>
+</body>
+</html>
