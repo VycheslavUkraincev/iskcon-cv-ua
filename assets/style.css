@@ -214,6 +214,20 @@ footer nav a:hover{text-decoration:underline}
 
 .donate-modal-foot{padding:10px 18px;border-top:1px solid var(--line);font-size:.82rem;
   color:var(--muted);text-align:center}
+
+/* Food for Life visual upgrade (inspired by foodforlife.ua) */
+.badge{display:inline-block;background:linear-gradient(90deg,#E8820B,#D93A1E);color:#fff;font-size:.8rem;font-weight:700;padding:6px 16px;border-radius:999px;letter-spacing:.5px;margin-bottom:14px}
+.btn-gradient{background:linear-gradient(90deg,#E8820B,#D93A1E)!important;color:#fff!important;border:none!important;box-shadow:0 6px 20px rgba(217,58,30,.35)}
+.btn-gradient:hover{filter:brightness(1.08);box-shadow:0 8px 26px rgba(217,58,30,.45)}
+.hero-food{display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:center;text-align:left;max-width:1000px;margin:0 auto}
+.hero-food h1{font-size:2.6rem;line-height:1.15;margin:.2em 0}
+.hero-food h1 .hl{color:#D93A1E}
+.hero-food .lede{text-align:left;margin:0 0 24px}
+.tilt-photo{background:#fff;padding:10px 10px 28px;border-radius:8px;box-shadow:0 12px 32px rgba(0,0,0,.18);transform:rotate(2.5deg);transition:transform .3s}
+.tilt-photo:hover{transform:rotate(0deg) scale(1.02)}
+.tilt-photo img{border-radius:4px;width:100%;height:auto;display:block}
+@media(max-width:700px){.hero-food{grid-template-columns:1fr;text-align:center}.hero-food .lede{text-align:center}.hero-food h1{font-size:2rem}}
+
 @media(max-width:640px){.donate-modal{padding:8px}.donate-modal-frame{min-height:75vh}}
 @media(prefers-reduced-motion:reduce){.donate-modal.open{animation:none}.donate-modal-loader .spin{animation-duration:2s}}
 
