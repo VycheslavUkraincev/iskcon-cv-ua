@@ -2,12 +2,15 @@
    Dictionaries: I18N in assets/i18n-dict.js (keys = normalized Ukrainian source).
    Features: localStorage persistence, ?lang= param, dynamic <html lang>,
    text nodes + alt/title/aria-label/data-caption/placeholder + meta tags,
-   MutationObserver for dynamic content (avatar chat). */
+   MutationObserver for dynamic content (avatar chat).
+   Safety: observer is always disconnected while translating (no re-entrancy). */
 (function(){
 "use strict";
 
 var ATTRS = ["alt","title","aria-label","data-caption","placeholder"];
+var OBS_OPTS = { childList: true, subtree: true, characterData: true };
 var _busy = false;
+var observer = null;
 
 function norm(s){ return String(s).replace(/\s+/g," ").trim(); }
 function dict(){ return (typeof I18N !== "undefined" && I18N[currentLang]) || {}; }
@@ -16,7 +19,7 @@ var store = null;
 try { store = localStorage.getItem("lang"); } catch(e){}
 var qs = null;
 try { qs = new URLSearchParams(location.search).get("lang"); } catch(e){}
-var currentLang = (qs && typeof I18N !== "undefined" && I18N[qs]) ? qs : (store || "uk");
+var currentLang = (qs === "uk" || qs === "ro" || qs === "en") ? qs : (store || "uk");
 if (currentLang !== "uk" && currentLang !== "ro" && currentLang !== "en") currentLang = "uk";
 
 function t(uk){
@@ -27,9 +30,7 @@ function t(uk){
 
 function translateTextNode(node){
   if (node._i18nOrig === undefined) node._i18nOrig = node.nodeValue;
-  var tr = t(node._i18nOrig);
-  var target = tr !== null ? tr : (currentLang === "uk" ? node._i18nOrig : node._i18nOrig);
-  if (currentLang === "uk") target = node._i18nOrig;
+  var target = currentLang === "uk" ? node._i18nOrig : (t(node._i18nOrig) || node._i18nOrig);
   if (node.nodeValue !== target) node.nodeValue = target;
 }
 
@@ -56,14 +57,12 @@ function translateEl(el){
 }
 
 function translateMeta(){
-  var d = dict();
   function setMeta(sel, attr){
     var m = document.querySelector(sel);
     if (!m) return;
-    var dk = "_i18n_m";
-    if (m[dk] === undefined) m[dk] = m.getAttribute(attr) || "";
-    var tr = t(m[dk]);
-    var target = currentLang === "uk" ? m[dk] : (tr !== null ? tr : m[dk]);
+    if (m._i18n_m === undefined) m._i18n_m = m.getAttribute(attr) || "";
+    var tr = t(m._i18n_m);
+    var target = currentLang === "uk" ? m._i18n_m : (tr !== null ? tr : m._i18n_m);
     if (m.getAttribute(attr) !== target) m.setAttribute(attr, target);
   }
   var title = document.querySelector("title");
@@ -93,17 +92,25 @@ function ensureHreflang(){
   });
 }
 
+function observeOn(){ try { if (observer) observer.observe(document.body, OBS_OPTS); } catch(e){} }
+function observeOff(){ try { if (observer) observer.disconnect(); } catch(e){} }
+
 function translatePage(){
   if (_busy) return; _busy = true;
+  observeOff();
   try {
     translateEl(document.body);
     translateMeta();
     ensureHreflang();
-  } finally { _busy = false; }
+  } finally {
+    _busy = false;
+    observeOn();
+  }
 }
 
 function setLang(l){
-  if (typeof I18N !== "undefined" && !I18N[l]) return;
+  if (l !== "uk" && l !== "ro" && l !== "en") return;
+  if (typeof I18N !== "undefined" && l !== "uk" && !I18N[l]) return;
   currentLang = l;
   try { localStorage.setItem("lang", l); } catch(e){}
   document.documentElement.lang = l;
@@ -113,15 +120,21 @@ function setLang(l){
   translatePage();
 }
 
-var observer = new MutationObserver(function(muts){
+observer = new MutationObserver(function(muts){
   if (_busy) return;
   _busy = true;
+  observeOff();
   try {
-    muts.forEach(function(m){
-      if (m.type === "characterData"){ translateEl(m.target); return; }
-      m.addedNodes.forEach(function(n){ translateEl(n); });
-    });
-  } finally { _busy = false; }
+    for (var i = 0; i < muts.length; i++){
+      var m = muts[i];
+      if (m.type === "characterData"){ translateEl(m.target); continue; }
+      var an = m.addedNodes;
+      for (var j = 0; j < an.length; j++){ translateEl(an[j]); }
+    }
+  } finally {
+    _busy = false;
+    observeOn();
+  }
 });
 
 document.addEventListener("DOMContentLoaded", function(){
@@ -129,9 +142,7 @@ document.addEventListener("DOMContentLoaded", function(){
     b.addEventListener("click", function(){ setLang(b.dataset.lang); });
   });
   setLang(currentLang);
-  try {
-    observer.observe(document.body, { childList: true, subtree: true, characterData: true });
-  } catch(e){}
+  observeOn();
 });
 
 window.__setLang = setLang;
