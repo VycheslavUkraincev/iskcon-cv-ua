@@ -24,6 +24,9 @@ a{color:var(--saffron-dark)}
 .nav a{text-decoration:none;color:var(--ink);padding:8px 12px;border-radius:10px;font-size:.95rem}
 .nav a:hover,.nav a.active{background:var(--saffron-soft);color:var(--saffron-dark)}
 
+.lang-switcher{margin-left:auto}
+.lang-btn{background:transparent;border:1px solid var(--saffron-soft);border-radius:6px;padding:4px 8px;font-size:.8rem;cursor:pointer}
+.lang-btn.active{background:var(--saffron);color:#fff;border-color:var(--saffron)}
 /* HERO */
 .hero{text-align:center;padding:52px 18px 40px}
 .hero img.logo{width:120px;height:auto;margin-bottom:14px}
