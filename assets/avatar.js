@@ -19,7 +19,8 @@ var QA = [
     a:"Ведична філософія, ведична кулінарія та гра на традиційних інструментах (каратали, мріданг, фісгармонія). Запис за телефонами храму.",
     link:"courses", linkText:"До курсів →" },
   { id:"volunteer", q:"Як стати волонтером?",
-    a:"Ми завжди раді новим волонтерам! Приходьте до храму (вул. Скальда, 40А) або напишіть нам у Telegram." },
+    a:"Ми завжди раді новим волонтерам! Приходьте до храму (вул. Скальда, 40А) або напишіть нам у Telegram.",
+    qr:"assets/tg-qr.png", qrText:"Скануйте щоб написати в Telegram" },
   { id:"donate", q:"Як підтримати храм?",
     a:"Дякуємо за ваше відкрите серце! Зробити разову чи регулярну пожертву можна на сторінці «Пожертви».",
     link:"donation", linkText:"Перейти до пожертв →" }
@@ -215,7 +216,7 @@ function answer(i){
   scrollDown();
   setTimeout(function(){
     t.remove();
-    var m = addMsg(item.a);
+    var m = addMsg(item.a); if(item.qr){var qi=document.createElement("img");qi.src=item.qr;qi.style.cssText="width:120px;height:120px;margin:10px auto;display:block;border-radius:8px;";m.appendChild(qi);var qt=document.createElement("div");qt.style.cssText="text-align:center;font-size:.85rem;opacity:.7;";qt.textContent=item.qrText;m.appendChild(qt);}
     if(item.link){
       var a = document.createElement("a");
       a.href = item.link; a.className = "avatar-link"; a.textContent = item.linkText;
