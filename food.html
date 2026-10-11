@@ -34,8 +34,8 @@
     <h1>Ми <span class="hl">годуємо</span> людей</h1>
     <p class="lede">Гарячі вегетаріанські обіди щосуботи о 14:00 на Соборній площі.<br>Готуємо і годуємо — із любов'ю до людей 💛</p>
     <div style="display:flex;gap:12px;flex-wrap:wrap">
-      <a class="btn btn-gradient" href="https://send.monobank.ua/jar/8cZpfkd4Xh" target="_blank" rel="noopener">💳 Підтримати</a>
-      <a class="btn btn-ghost" href="food#volunteer">🙋 Стати волонтером</a>
+      <a class="btn btn-gradient" href="#" onclick="openDonateModal(event)">💳 Підтримати</a>
+      <a class="btn btn-ghost" href="#" onclick="openVolunteerChat(event)">🙋 Стати волонтером</a>
     </div>
   </div>
   <div class="tilt-photo"><img src="assets/festival/ffl-distribution-1.webp" alt="Зимова роздача їжі" loading="lazy"></div>
@@ -114,5 +114,5 @@
 
 <script src="assets/site.js"></script>
 <script src="assets/avatar.js"></script><script src="assets/i18n-dict.js"></script><script src="assets/i18n.js"></script>
-</body>
+<script> function openVolunteerChat(e){e.preventDefault();var avatar=document.querySelector('.avatar-widget .avatar-char')||document.querySelector('[class*=avatar]');if(avatar){avatar.click();setTimeout(function(){var btns=document.querySelectorAll('.avatar-chat button, .avatar-card button');for(var i=0;i<btns.length;i++){if(btns[i].textContent.indexOf('волонтер')>-1){btns[i].click();break;}}},500);}else{document.getElementById('volunteer').scrollIntoView({behavior:'smooth'});}} function openDonateModal(e){e.preventDefault();var m=document.createElement('div');m.style.cssText='position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.7);z-index:9999;display:flex;align-items:center;justify-content:center;';m.innerHTML='<div style="background:#fff;border-radius:16px;padding:20px;max-width:500px;width:90%;max-height:90vh;overflow:auto;position:relative;"><button onclick="this.closest(\'div[style*=fixed]\').remove()" style="position:absolute;top:10px;right:15px;font-size:24px;background:none;border:none;cursor:pointer;">×</button><h3>Підтримати «Їжу життя»</h3><iframe src="https://send.monobank.ua/jar/8cZpfkd4Xh" style="width:100%;height:500px;border:none;border-radius:8px;"></iframe><p style="text-align:center;margin-top:10px;"><a href="donation">Інші способи підтримки →</a></p></div>';m.addEventListener('click',function(ev){if(ev.target===m)m.remove();});document.body.appendChild(m);} </script> </body>
 </html>
