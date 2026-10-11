@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Їжа життя Чернівці — Ми годуємо людей</title>
+<meta name="description" content="Благодійна місія «Їжа життя Чернівці»: гарячі вегетаріанські обіди щосуботи. 5 млн+ обідів в Україні. Долучайтесь!">
+<meta name="theme-color" content="#E8590C">
+<style>
+:root{--orange:#E8590C;--orange-dark:#C94A08;--red:#C92A2A;--cream:#FFF8F0;--ink:#2B2118;--muted:#8A7A6A;--gold:#F59F00}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,serif;background:var(--cream);color:var(--ink);line-height:1.7}
+img{max-width:100%;display:block}
+.container{max-width:1120px;margin:0 auto;padding:0 22px}
+section{padding:64px 0;scroll-margin-top:70px}
+.site-header{background:#fff;border-bottom:1px solid #F0E6D6;padding:12px 0;position:sticky;top:0;z-index:100}
+.site-header .container{display:flex;justify-content:space-between;align-items:center}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-weight:700;letter-spacing:.08em}
+.brand img{width:36px;height:36px;border-radius:50%}
+.nav a{color:var(--ink);text-decoration:none;margin-left:20px;font-size:.93rem}
+.nav a.active,.nav a:hover{color:var(--orange-dark)}
+.hero{position:relative;min-height:92vh;display:flex;align-items:center;overflow:hidden;background:var(--red)}
+.hero-collage{position:absolute;inset:0;display:grid;grid-template-columns:repeat(6,1fr);grid-template-rows:repeat(4,1fr);gap:2px;opacity:.35}
+.hero-collage img{width:100%;height:100%;object-fit:cover}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(201,42,42,.88),rgba(232,89,12,.82))}
+.hero-content{position:relative;z-index:2;color:#fff;width:100%;padding:60px 0}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.35);padding:8px 20px;border-radius:30px;font-size:.88rem;letter-spacing:.08em;margin-bottom:20px}
+.hero-badge .dot{width:8px;height:8px;border-radius:50%;background:#FFD43B;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+.hero h1{font-size:clamp(2.4rem,6vw,4.2rem);margin-bottom:8px}
+.hero h1 .hl{color:var(--gold)}
+.hero .sub{font-size:1.3rem;margin-bottom:30px;opacity:.92}
+.counter-wrap{margin:28px 0}
+.counter-label{font-size:.95rem;letter-spacing:.12em;text-transform:uppercase;opacity:.85;margin-bottom:12px}
+.flip-counter{display:flex;gap:6px;flex-wrap:wrap}
+.flip-digit{background:#1A1A1A;border-radius:8px;min-width:60px;height:84px;display:flex;align-items:center;justify-content:center;font-size:2.8rem;font-weight:700;color:#fff;font-family:monospace;box-shadow:0 4px 12px rgba(0,0,0,.4);position:relative;overflow:hidden}
+.flip-digit::after{content:"";position:absolute;left:0;right:0;top:50%;height:1px;background:rgba(255,255,255,.15)}
+.counter-caption{margin-top:14px;font-size:1.1rem;opacity:.92}
+.counter-caption strong{color:var(--gold)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 38px;border-radius:10px;text-decoration:none;font-family:inherit;font-size:1.08rem;font-weight:700;cursor:pointer;border:none;transition:.25s}
+.btn-help{background:#1A1A1A;color:#fff}
+.btn-help:hover{transform:translateY(-2px)}
+.btn-outline-w{border:2px solid #fff;color:#fff;background:transparent;margin-left:12px}
+.btn-outline-w:hover{background:rgba(255,255,255,.15)}
+.hero-schedule{margin-top:20px;font-size:1rem;opacity:.85}
+.handwritten{font-family:cursive;font-size:clamp(2rem,5vw,3.2rem);color:var(--gold);margin-top:32px;transform:rotate(-3deg);display:inline-block}
+.sec-title{font-size:clamp(1.8rem,4vw,2.5rem);text-align:center;margin-bottom:12px}
+.sec-sub{text-align:center;color:var(--muted);max-width:660px;margin:0 auto 44px;font-size:1.08rem}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{background:#fff;border-radius:14px;padding:32px;box-shadow:0 4px 18px rgba(0,0,0,.06)}
+.card h3{font-size:1.25rem;margin-bottom:10px;color:var(--orange-dark)}
+.card p{color:var(--muted);font-size:.98rem}
+.card .icon{font-size:2.4rem;margin-bottom:14px;display:block}
+.who-card{background:linear-gradient(135deg,#FFF4E5,#FFE8CC);border:2px solid #FFD8A8;text-align:center}
+.story{display:grid;grid-template-columns:200px 1fr;gap:24px;background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 6px 24px rgba(0,0,0,.08);margin-bottom:24px}
+.story img{width:200px;height:100%;object-fit:cover;min-height:200px}
+.story-body{padding:28px}
+.story-body .name{font-weight:700;font-size:1.1rem;margin-bottom:6px}
+.story-body .quote{font-style:italic;color:var(--muted)}
+.stats{background:var(--ink);color:#fff}
+.stats .sec-title{color:#fff}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center}
+.stat-num{font-size:2.6rem;font-weight:700;color:var(--gold)}
+.stat-label{opacity:.7;margin-top:6px;font-size:.95rem}
+.join-card{border-top:4px solid var(--orange)}
+.social-row{display:flex;gap:14px;justify-content:center;margin-top:24px;flex-wrap:wrap}
+.social-btn{display:inline-flex;align-items:center;gap:10px;padding:12px 24px;border-radius:30px;text-decoration:none;font-weight:700;font-size:.95rem;color:#fff;transition:.25s}
+.social-btn.tg{background:#229ED9}.social-btn.ig{background:linear-gradient(45deg,#F58529,#DD2A7B,#8134AF)}.social-btn.yt{background:#FF0000}
+.social-btn:hover{transform:translateY(-2px)}
+.faq-item{background:#fff;border-radius:10px;margin-bottom:10px;overflow:hidden;max-width:780px;margin-left:auto;margin-right:auto}
+.faq-q{padding:18px 24px;font-weight:700;cursor:pointer;display:flex;justify-content:space-between}
+.faq-a{padding:0 24px;max-height:0;overflow:hidden;transition:.3s;color:var(--muted)}
+.faq-item.open .faq-a{max-height:300px;padding:0 24px 20px}
+.transparency{background:#fff;border-radius:16px;padding:36px;max-width:800px;margin:0 auto}
+.trans-bar{background:#F0E6D6;border-radius:10px;height:22px;overflow:hidden;margin:10px 0}
+.trans-fill{height:100%;background:linear-gradient(90deg,var(--orange),var(--gold));width:0;transition:width 1.5s ease}
+.cta-final{background:linear-gradient(135deg,var(--red),var(--orange-dark));color:#fff;text-align:center;padding:80px 0}
+.cta-final h2{font-size:clamp(2rem,5vw,3rem);margin-bottom:16px}
+footer{background:var(--ink);color:#D4C4B0;padding:48px 0 28px}
+footer .grid3{margin-bottom:28px}
+footer h4{color:var(--gold);margin-bottom:12px}
+footer a{color:#D4C4B0;opacity:.75;text-decoration:none;display:block;margin-bottom:8px;font-size:.93rem}
+.copyright{text-align:center;opacity:.45;font-size:.88rem;padding-top:20px;border-top:1px solid rgba(255,255,255,.1)}
+.reveal{opacity:0;transform:translateY(28px);transition:.7s ease}
+.reveal.visible{opacity:1;transform:none}
+html{scroll-behavior:smooth}
+@media(max-width:768px){.grid3,.stats-grid{grid-template-columns:1fr}.story{grid-template-columns:1fr}.story img{width:100%;height:200px}.flip-digit{min-width:44px;height:64px;font-size:2rem}.hero{min-height:auto}}
+</style>
+</head>
+<body>
+<header class="site-header"><div class="container">
+<a class="brand" href="./"><img src="assets/logo.jpg" alt="ІСККОН Чернівці"><span>ІСККОН ЧЕРНІВЦІ</span></a>
+<nav class="nav"><a href="./">Головна</a><a href="food" class="active">Їжа життя</a><a href="donation">Пожертви</a></nav>
+</div></header>
+<section class="hero" style="padding:0"><div class="hero-collage" id="collage"></div><div class="hero-overlay"></div>
+<div class="hero-content"><div class="container">
+<div class="hero-badge"><span class="dot"></span> В ОЧІКУВАННІ · ГОТУЄМО НАСТУПНУ РОЗДАЧУ</div>
+<h1>Ми <span class="hl">годуємо</span> людей</h1>
+<p class="sub">поживно · стабільно · з турботою</p>
+<div class="counter-wrap"><div class="counter-label">Гарячих обідів роздано в Україні</div>
+<div class="flip-counter" id="mealCounter"></div>
+<div class="counter-caption"><strong>5 000 000+</strong> з 1994 року · Щосуботи в Чернівцях</div></div>
+<a href="https://send.monobank.ua/jar/8cZpfkd4Xh" target="_blank" rel="noopener" class="btn btn-help">ДОПОМОГТИ</a>
+<a href="#join" class="btn btn-outline-w">Стати волонтером</a>
+<div class="hero-schedule">📅 Щосуботи о 14:00 · Соборна площа, Чернівці</div>
+<div class="handwritten">Годуй · Молись · Люби</div>
+</div></div></section>
+<section id="who"><div class="container">
+<h2 class="sec-title">Для кого?</h2><p class="sec-sub">Для всіх, кому зараз важко</p>
+<div class="grid3">
+<div class="card who-card"><span class="icon">👴</span><h3>Літні люди</h3><p>Самотні пенсіонери. Гарячий обід і тепле слово.</p></div>
+<div class="card who-card"><span class="icon">👨‍👩‍👧</span><h3>Родини</h3><p>Малозабезпечені, багатодітні, ті хто втратив роботу.</p></div>
+<div class="card who-card"><span class="icon">🧳</span><h3>Переселенці</h3><p>Люди, які втекли від війни. Їжа і підтримка.</p></div>
+</div><p style="text-align:center;margin-top:24px;font-size:1.15rem"><strong>Для кожного, хто потребує підтримки.</strong></p>
+</div></section>
+<section id="why-veg" style="background:#fff"><div class="container" style="max-width:800px;text-align:center">
+<h2 class="sec-title">Чому вегетаріанська?</h2>
+<p style="font-size:1.15rem;margin-bottom:16px">Насильство породжує насильство. Ми обрали інший шлях.</p>
+<p style="color:var(--muted)">Кожна порція — нагадування: <strong>"Ти не на самоті"</strong>.</p>
+</div></section>
+<section id="stories"><div class="container">
+<h2 class="sec-title">Історії, які гріють</h2><p class="sec-sub">Люди, яким ми допомагаємо</p>
+<div class="story"><img src="assets/food/ffl-carousel-01.jpg" alt="Роздача їжі" loading="lazy"><div class="story-body"><div class="name">Пан Микола, 78 років</div><div class="quote">"Живу сам. Ваша субота — єдиний день, коли їм гаряче."</div></div></div>
+<div class="story"><img src="assets/food/ffl-carousel-02.jpg" alt="Волонтери" loading="lazy"><div class="story-body"><div class="name">Пані Олена, переселенка</div><div class="quote">"Приїхали з двома дітьми. Ви перші, хто нас нагодував."</div></div></div>
+</div></section>
+<section class="stats"><div class="container">
+<h2 class="sec-title">Цифри, які говорять</h2>
+<div class="stats-grid">
+<div><div class="stat-num" data-count="1974">0</div><div class="stat-label">рік заснування руху</div></div>
+<div><div class="stat-num" data-count="1994">0</div><div class="stat-label">початок в Україні</div></div>
+<div><div class="stat-num" data-count="5000000" data-suffix="+">0</div><div class="stat-label">обідів роздано</div></div>
+<div><div class="stat-num" data-count="200" data-suffix="+">0</div><div class="stat-label">порцій щосуботи</div></div>
+</div></div></section>
+<section id="join"><div class="container">
+<h2 class="sec-title">Як долучитися?</h2><p class="sec-sub">Стань частиною турботи</p>
+<div class="grid3">
+<div class="card join-card"><span class="icon">💳</span><h3>Фінансова допомога</h3><p>100 грн = гарячий обід. На продукти, паливо, посуд.</p><a href="https://send.monobank.ua/jar/8cZpfkd4Xh" target="_blank" rel="noopener" class="btn btn-help" style="margin-top:14px;padding:12px 28px;font-size:.95rem">Допомогти</a></div>
+<div class="card join-card"><span class="icon">🙋</span><h3>Волонтерство</h3><p>Готування, роздача. Щосуботи з 08:00.</p><a href="https://t.me/ffl_cv_ua" target="_blank" rel="noopener" class="btn btn-help" style="margin-top:14px;padding:12px 28px;font-size:.95rem;background:var(--orange)">Написати</a></div>
+<div class="card join-card"><span class="icon">🤝</span><h3>Партнерство</h3><p>Бізнес, медіа — допоможіть говорити про добро.</p><a href="https://t.me/ffl_cv_ua" target="_blank" rel="noopener" class="btn btn-help" style="margin-top:14px;padding:12px 28px;font-size:.95rem;background:#555">Зв'язатися</a></div>
+</div></div></section>
+<section id="transparency" style="background:#fff"><div class="container">
+<h2 class="sec-title">Куди йдуть кошти</h2><p class="sec-sub">Прозоро і чесно</p>
+<div class="transparency">
+<p><strong>70%</strong> — продукти</p><div class="trans-bar"><div class="trans-fill" data-width="70"></div></div>
+<p><strong>15%</strong> — паливо і логістика</p><div class="trans-bar"><div class="trans-fill" data-width="15"></div></div>
+<p><strong>10%</strong> — посуд і матеріали</p><div class="trans-bar"><div class="trans-fill" data-width="10"></div></div>
+<p style="margin-top:16px;color:var(--muted);font-size:.95rem">Всі волонтери. Звіти — в Instagram.</p>
+</div></div></section>
+<section id="history"><div class="container" style="max-width:800px">
+<h2 class="sec-title">Історія</h2>
+<p style="font-size:1.1rem;margin-bottom:14px"><strong>1974</strong> — Прабгупада започаткував "Їжу життя": ніхто не має голодувати.</p>
+<p style="font-size:1.1rem;margin-bottom:14px"><strong>1994</strong> — початок в Україні.</p>
+<p style="font-size:1.1rem"><strong>Сьогодні</strong> — щосуботи в Чернівцях: готуємо з 08:00, роздаємо о 14:00.</p>
+</div></section>
+<section id="faq"><div class="container">
+<h2 class="sec-title">Часті питання</h2>
+<div class="faq-item"><div class="faq-q">Хто може отримати обід? <span>+</span></div><div class="faq-a">Будь-хто. Без документів. Просто приходьте.</div></div>
+<div class="faq-item"><div class="faq-q">Коли і де? <span>+</span></div><div class="faq-a">Щосуботи о 14:00, Соборна площа.</div></div>
+<div class="faq-item"><div class="faq-q">Як стати волонтером? <span>+</span></div><div class="faq-a">Напишіть в Telegram. Чекаємо щосуботи з 08:00!</div></div>
+<div class="faq-item"><div class="faq-q">Куди йдуть пожертви? <span>+</span></div><div class="faq-a">Продукти 70%, паливо 15%, посуд 10%.</div></div>
+</div></section>
+<section class="cta-final"><div class="container">
+<h2>Годуй · Молись · Люби</h2>
+<p style="font-size:1.2rem;margin-bottom:28px;opacity:.9">Твоя допомога — гарячий обід для людини.</p>
+<a href="https://send.monobank.ua/jar/8cZpfkd4Xh" target="_blank" rel="noopener" class="btn btn-help" style="font-size:1.2rem;padding:18px 48px">ДОПОМОГТИ ЗАРАЗ</a>
+</div></section>
+<footer id="contacts"><div class="container">
+<div class="grid3">
+<div><h4>КОНТАКТИ</h4><a href="https://maps.app.goo.gl/rz1nyMWUVKGSP29Z6" target="_blank" rel="noopener">📍 Соборна площа</a><a href="https://t.me/ffl_cv_ua" target="_blank" rel="noopener">📱 Telegram</a></div>
+<div><h4>ДОПОМОГТИ</h4><a href="https://send.monobank.ua/jar/8cZpfkd4Xh" target="_blank" rel="noopener">💳 Monobank</a><a href="donation">💳 Всі способи</a></div>
+<div><h4>РЕКВІЗИТИ</h4><p style="font-size:.88rem;opacity:.7">БО "БФ Їжа Життя Чернівці"<br>ЄДРПОУ 46285356</p></div>
+</div>
+<div class="social-row">
+<a href="https://t.me/ffl_cv_ua" target="_blank" rel="noopener" class="social-btn tg">✈️ Telegram</a>
+<a href="https://www.instagram.com/ffl.cv.ua/" target="_blank" rel="noopener" class="social-btn ig">📸 Instagram</a>
+<a href="https://www.youtube.com/@ISKCONChernivtsi" target="_blank" rel="noopener" class="social-btn yt">▶️ YouTube</a>
+</div>
+<div class="copyright" style="margin-top:28px">© 2026 Їжа життя Чернівці</div>
+</div></footer>
+<script>
+const photos=['assets/food/ffl-carousel-01.jpg','assets/food/ffl-carousel-02.jpg','assets/food/ffl-carousel-03.jpg','assets/food/ffl-carousel-04.jpg','assets/food/ffl-carousel-05.jpg','assets/food/ffl-carousel-06.jpg','assets/food/ffl-carousel-07.jpg','assets/food/ffl-carousel-08.jpg','assets/food/ffl-carousel-09.jpg'];
+const collage=document.getElementById('collage');
+for(let i=0;i<24;i++){const img=document.createElement('img');img.src=photos[i%photos.length];img.loading='lazy';img.alt='';collage.appendChild(img);}
+const target=5000000,counter=document.getElementById('mealCounter');
+function renderCounter(v){const s=String(v).padStart(7,'0');counter.innerHTML='';s.split('').forEach(d=>{const el=document.createElement('div');el.className='flip-digit';el.textContent=d;counter.appendChild(el);});}
+let cur=4980000;renderCounter(cur);
+const ci=setInterval(()=>{cur+=Math.floor(Math.random()*3)+1;if(cur>=target){cur=target;clearInterval(ci);}renderCounter(cur);},150);
+const so=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){const el=e.target,t=+el.dataset.count,suf=el.dataset.suffix||'';let c=0;const iv=setInterval(()=>{c+=t/50;if(c>=t){c=t;clearInterval(iv);}el.textContent=Math.round(c).toLocaleString('uk-UA')+suf;},30);so.unobserve(el);}}),{threshold:.5});
+document.querySelectorAll('.stat-num').forEach(el=>so.observe(el));
+const bo=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.querySelectorAll('.trans-fill').forEach(f=>f.style.width=f.dataset.width+'%');bo.unobserve(e.target);}}),{threshold:.3});
+document.querySelectorAll('.transparency').forEach(el=>bo.observe(el));
+document.querySelectorAll('.faq-q').forEach(q=>q.addEventListener('click',()=>q.parentElement.classList.toggle('open')));
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target);}}),{threshold:.1});
+document.querySelectorAll('section .container > *').forEach(el=>{el.classList.add('reveal');io.observe(el)});
+</script>
+</body>
+</html>
