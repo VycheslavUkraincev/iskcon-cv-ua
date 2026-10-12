@@ -87,10 +87,40 @@ ul.tick li::before{content:"✓";position:absolute;left:2px;color:var(--green);f
 /* CONTACTS */
 .contact-list{display:flex;flex-direction:column;gap:8px;font-size:1rem}
 .contact-list a{color:var(--saffron-dark);text-decoration:none;font-weight:600}
-.socials{display:flex;gap:10px;justify-content:center;margin-top:16px;flex-wrap:wrap}
-.socials a{display:inline-block;padding:10px 20px;border:1px solid var(--line);
+.socials{display:flex;gap:10px;justify-content:center;align-items:center;margin-top:16px;flex-wrap:wrap}
+.socials a:not(.icon-btn):not(.social-btn){display:inline-block;padding:10px 20px;border:1px solid var(--line);
   border-radius:999px;background:var(--card);text-decoration:none;color:var(--ink);font-size:.95rem}
-.socials a:hover{border-color:var(--saffron);color:var(--saffron-dark)}
+.socials a:not(.icon-btn):not(.social-btn):hover{border-color:var(--saffron);color:var(--saffron-dark)}
+.contact-phones{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px}
+.messengers{display:inline-flex;align-items:center;gap:8px;margin-left:6px;vertical-align:middle}
+.messengers img{width:24px;height:24px;display:block;object-fit:contain}
+.socials--channels{gap:14px;margin-top:20px;padding-top:18px;border-top:1px dashed var(--line)}
+.social-btn{box-sizing:border-box;display:grid;place-items:center;
+  flex-shrink:0;width:48px;height:48px;padding:0;border:1px solid transparent;border-radius:14px;
+  text-decoration:none;line-height:0;font-size:0;background:#fff;
+  box-shadow:0 2px 10px rgba(44,35,24,.07),inset 0 1px 0 rgba(255,255,255,.85);
+  transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease,background .2s ease}
+.social-btn img{width:24px;height:24px;display:block;object-fit:contain;pointer-events:none;
+  transition:transform .2s ease}
+.social-btn:hover{transform:translateY(-2px)}
+.social-btn:hover img{transform:scale(1.06)}
+.social-btn:active{transform:translateY(0) scale(.97)}
+.social-btn:focus-visible{outline:2px solid var(--saffron);outline-offset:3px}
+.social-btn--telegram{background:linear-gradient(160deg,#f3fafe 0%,#e5f4fc 100%);border-color:rgba(38,165,228,.22)}
+.social-btn--telegram:hover{background:#26A5E4;border-color:#26A5E4;box-shadow:0 10px 22px rgba(38,165,228,.32)}
+.social-btn--facebook{background:linear-gradient(160deg,#f2f6fe 0%,#e6eefc 100%);border-color:rgba(24,119,242,.2)}
+.social-btn--facebook:hover{background:#1877F2;border-color:#1877F2;box-shadow:0 10px 22px rgba(24,119,242,.28)}
+.social-btn--instagram{background:linear-gradient(160deg,#fff5f3 0%,#fcecf6 45%,#eef1fd 100%);border-color:rgba(214,36,159,.18)}
+.social-btn--instagram:hover{background:linear-gradient(135deg,#fd5949 0%,#d6249f 52%,#285aeb 100%);
+  border-color:transparent;box-shadow:0 10px 22px rgba(214,36,159,.28)}
+.social-btn--youtube{background:linear-gradient(160deg,#fff3f3 0%,#ffe8e8 100%);border-color:rgba(255,0,0,.15)}
+.social-btn--youtube:hover{background:#FF0000;border-color:#FF0000;box-shadow:0 10px 22px rgba(255,0,0,.26)}
+.social-btn--telegram:hover img,.social-btn--facebook:hover img,.social-btn--youtube:hover img{filter:brightness(0) invert(1)}
+.social-btn--instagram:hover img{filter:brightness(0) invert(1)}
+@media(prefers-reduced-motion:reduce){
+  .social-btn,.social-btn img{transition:none}
+  .social-btn:hover{transform:none}
+}
 
 /* FOOTER */
 footer{border-top:1px solid var(--line);margin-top:36px;padding:22px 0 34px;
