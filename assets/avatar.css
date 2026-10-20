@@ -32,16 +32,10 @@
 .avatar-char:active{transform:scale(.96)}
 .avatar-svg{width:100%;height:100%;overflow:visible;display:block}
 
-/* Живе відео персонажа: без рамки і фону — краї м'яко розчиняються у сторінку */
+/* Живе відео персонажа: без рамки — фон ролика вирівняно в колір сторінки (#FDF8EE) */
 .avatar-video{
   width:100%;height:auto;display:block;
-  -webkit-mask-image:radial-gradient(ellipse 90% 88% at 50% 46%, #000 62%, transparent 92%);
-  mask-image:radial-gradient(ellipse 90% 88% at 50% 46%, #000 62%, transparent 92%);
   transition:transform .4s ease, filter .4s ease;
-}
-.avatar-fallback img{
-  -webkit-mask-image:radial-gradient(ellipse 90% 88% at 50% 46%, #000 62%, transparent 92%);
-  mask-image:radial-gradient(ellipse 90% 88% at 50% 46%, #000 62%, transparent 92%);
 }
 .avatar-char.curious .avatar-video{transform:rotate(-2.5deg)}
 .avatar-char.talking .avatar-video{animation:avVideoTalk .9s ease-in-out infinite}
