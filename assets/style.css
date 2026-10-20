@@ -302,4 +302,6 @@ footer nav a:hover{text-decoration:underline}
   .bank .val{flex:1 1 100%;text-align:left;margin:4px 0}
   .bank .copy{align-self:flex-end} .reviews-summary{display:flex;gap:32px;align-items:center;justify-content:center;flex-wrap:wrap;margin:24px 0} .reviews-score{text-align:center} .reviews-number{font-size:3rem;font-weight:800;color:var(--saffron-deep)} .reviews-stars{font-size:1.5rem;color:#f5a623;letter-spacing:2px} .star-partial{opacity:.3} .reviews-bars{display:flex;flex-direction:column;gap:8px;min-width:220px} .reviews-bar{display:flex;align-items:center;gap:8px;font-size:.9rem} .reviews-bar .bar{flex:1;height:8px;background:var(--saffron-soft);border-radius:4px;overflow:hidden} .reviews-bar .fill{height:100%;background:#f5a623;border-radius:4px} .reviews-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:16px}
 }
-
+.skip-link{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}.skip-link:focus{position:static;width:auto;height:auto;padding:10px 16px;background:#D9820B;color:#fff;display:inline-block}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media(max-width:640px){.grid3{grid-template-columns:1fr}}
