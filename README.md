@@ -23,3 +23,13 @@ HTML + CSS + JS, без фреймворків і збірки.
 ## Контакти храму
 
 вул. Скальда (Комарова), 40А, Чернівці · 063-311-7500 · 095-144-0568
+
+## Деплой на iskcon.cv.ua
+
+GitHub Pages (ветка `gh-pages`) использует `<base href="/iskcon-cv-ua/">`. Для домена нужен `<base href="/">`:
+
+    tools/build-domain.sh dist-domain          # собрать версию для домена
+    tools/deploy.sh dist-domain --dry-run      # что изменится на сервере
+    tools/deploy.sh dist-domain                # бэкап на сервере + rsync + права 755/644
+
+Нужен SSH-алиас `iskcon` в `~/.ssh/config` (доступ по ключу). Секретов в репозитории нет.
