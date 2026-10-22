@@ -29,9 +29,11 @@ function t(uk){
 }
 
 function translateTextNode(node){
-  if (node._i18nOrig === undefined) node._i18nOrig = node.nodeValue;
+  /* source text changed by page scripts since our last pass -> take the new value as the source */
+  if (node._i18nOrig === undefined || (node._i18nLast !== undefined && node.nodeValue !== node._i18nLast)) node._i18nOrig = node.nodeValue;
   var target = currentLang === "uk" ? node._i18nOrig : (t(node._i18nOrig) || node._i18nOrig);
   if (node.nodeValue !== target) node.nodeValue = target;
+  node._i18nLast = node.nodeValue;
 }
 
 function translateEl(el){
@@ -45,11 +47,12 @@ function translateEl(el){
   for (var i = 0; i < ATTRS.length; i++){
     var a = ATTRS[i];
     if (el.hasAttribute(a)){
-      var dk = "_i18n_" + a;
-      if (el[dk] === undefined) el[dk] = el.getAttribute(a);
+      var dk = "_i18n_" + a, lk = "_i18nlast_" + a;
+      if (el[dk] === undefined || (el[lk] !== undefined && el.getAttribute(a) !== el[lk])) el[dk] = el.getAttribute(a);
       var tr = t(el[dk]);
       var target = currentLang === "uk" ? el[dk] : (tr !== null ? tr : el[dk]);
       if (el.getAttribute(a) !== target) el.setAttribute(a, target);
+      el[lk] = el.getAttribute(a);
     }
   }
   var child = el.firstChild;
@@ -75,6 +78,7 @@ function translateMeta(){
   setMeta('meta[name="description"]', "content");
   setMeta('meta[property="og:title"]', "content");
   setMeta('meta[property="og:description"]', "content");
+  setMeta('meta[property="og:site_name"]', "content");
   setMeta('meta[name="twitter:title"]', "content");
   setMeta('meta[name="twitter:description"]', "content");
   var loc = document.querySelector('meta[property="og:locale"]');
@@ -92,8 +96,8 @@ function ensureHreflang(){
   });
 }
 
-function observeOn(){}
-function observeOff(){}
+function observeOn(){ if (observer && document.body) observer.observe(document.body, OBS_OPTS); }
+function observeOff(){ if (observer) observer.disconnect(); }
 
 function translatePage(){
   if (_busy) return; _busy = true;
@@ -120,7 +124,6 @@ function setLang(l){
   translatePage();
 }
 
-/* OBSERVER DISABLED FOR DEBUG
 observer = new MutationObserver(function(muts){
   if (_busy) return;
   _busy = true;
@@ -137,7 +140,6 @@ observer = new MutationObserver(function(muts){
     observeOn();
   }
 });
-*/
 
 document.addEventListener("DOMContentLoaded", function(){
   document.querySelectorAll(".lang-btn").forEach(function(b){
