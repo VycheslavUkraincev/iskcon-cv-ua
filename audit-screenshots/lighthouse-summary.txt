@@ -1,0 +1,15 @@
+# Lighthouse 12.2.1, Chrome (локально, macOS), 22.10.2026. Один прогон на конфигурацию: разброс ±5–10 баллов Performance нормален.
+# prod = https://iskcon.cv.ua/… ; repo = https://vycheslavukraincev.github.io/iskcon-cv-ua/… (= gh-pages)
+
+prod-courses-desktop   Perf 67 | A11y 94 | BP 100 | SEO 100 | LCP 3.3 s | FCP 2.4 s | TBT 0 ms | CLS 0.001 | вес 2231 KB
+prod-courses-mobile    Perf 60 | A11y 94 | BP 100 | SEO 100 | LCP 13.5 s | FCP 3.8 s | TBT 20 ms | CLS 0.063 | вес 2231 KB
+prod-donation-desktop  Perf 97 | A11y 96 | BP 100 | SEO 100 | LCP 1.1 s | FCP 0.8 s | TBT 0 ms | CLS 0.031 | вес 163 KB
+prod-donation-mobile   Perf 81 | A11y 96 | BP 100 | SEO 100 | LCP 3.4 s | FCP 3.4 s | TBT 0 ms | CLS 0.001 | вес 163 KB
+prod-food-desktop      Perf 86 | A11y 94 | BP 96 | SEO 100 | LCP 1.7 s | FCP 1.7 s | TBT 0 ms | CLS 0 | вес 2309 KB
+prod-food-mobile       Perf 52 | A11y 94 | BP 96 | SEO 100 | LCP 4.7 s | FCP 3.7 s | TBT 0 ms | CLS 0.285 | вес 2204 KB
+prod-home-desktop      Perf 94 | A11y 96 | BP 100 | SEO 100 | LCP 1.6 s | FCP 0.7 s | TBT 0 ms | CLS 0.002 | вес 1652 KB
+prod-home-mobile       Perf 69 | A11y 96 | BP 100 | SEO 100 | LCP 7.3 s | FCP 3.1 s | TBT 0 ms | CLS 0.009 | вес 1050 KB
+repo-courses-mobile    Perf 61 | A11y 94 | BP 100 | SEO 100 | LCP 6.7 s | FCP 4.0 s | TBT 0 ms | CLS 0.007 | вес 3411 KB
+repo-donation-mobile   Perf 80 | A11y 96 | BP 100 | SEO 100 | LCP 3.7 s | FCP 3.5 s | TBT 0 ms | CLS 0 | вес 1383 KB
+repo-food-mobile       Perf 53 | A11y 94 | BP 96 | SEO 100 | LCP 10.5 s | FCP 2.7 s | TBT 0 ms | CLS 0.286 | вес 3291 KB
+repo-home-mobile       Perf 67 | A11y 96 | BP 100 | SEO 100 | LCP 7.6 s | FCP 3.1 s | TBT 0 ms | CLS 0 | вес 1683 KB
