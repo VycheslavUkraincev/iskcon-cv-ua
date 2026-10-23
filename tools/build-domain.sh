@@ -5,6 +5,6 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 OUT="${1:-dist-domain}"
 rm -rf "$OUT"; mkdir -p "$OUT"
-git ls-files -z -- assets food courses donation favicon.ico '*.html' | xargs -0 -I{} sh -c 'mkdir -p "$1/$(dirname "$2")" && cp "$2" "$1/$2"' _ "$OUT" {}
+git ls-files -z -- assets food courses donation favicon.ico robots.txt sitemap.xml '*.html' | xargs -0 -I{} sh -c 'mkdir -p "$1/$(dirname "$2")" && cp "$2" "$1/$2"' _ "$OUT" {}
 find "$OUT" -name '*.html' -exec sed -i '' 's#<base href="/iskcon-cv-ua/">#<base href="/">#' {} +
 echo "domain build in $OUT ($(find "$OUT" -type f | wc -l | tr -d ' ') files)"
