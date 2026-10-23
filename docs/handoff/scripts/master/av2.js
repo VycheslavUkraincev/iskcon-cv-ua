@@ -1,0 +1,5 @@
+const { chromium } = require(process.env.T+'/node_modules/playwright');
+(async()=>{const br=await chromium.launch({channel:'chrome'});for(const w of [1440,375]){const p=await br.newPage({viewport:{width:w,height:800}});await p.goto('http://127.0.0.1:8765/iskcon-cv-ua/food/',{waitUntil:'load'});
+ const r=[];for(let i=0;i<6;i++){r.push(await p.evaluate(()=>{const c=document.getElementById('avatarChar').getBoundingClientRect();const v=document.querySelector('#avatarChar .avatar-video');return [c.left,c.top,c.width,c.height].map(Math.round).join(',')+' '+v.tagName+(v.paused===false?' playing':'')}));await p.waitForTimeout(2000)}
+ await p.click('#avatarChar');await p.waitForTimeout(600);const card=await p.evaluate(()=>{const c=document.getElementById('avatarCard').getBoundingClientRect(),a=document.getElementById('avatarWidget').getBoundingClientRect();return {cardBottom:Math.round(c.bottom),widgetTop:Math.round(a.top),cardTop:Math.round(c.top)}});
+ console.log(w,[...new Set(r)],card);await p.screenshot({path:`/Users/sergiyshakola/scratch/m/s/c1-chat-${w}.jpg`,type:'jpeg',quality:70})}await br.close()})();
