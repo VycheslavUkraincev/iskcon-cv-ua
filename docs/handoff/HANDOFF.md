@@ -94,13 +94,13 @@ git add -A && git commit -m "Preview only: point <base> to /iskcon-mockup-v2-pre
 **Хуки для будущих форм:** `data-form="courses"` (кнопка записи на `/courses`), `data-form="ffl-volunteer"` (hero `/food`), `data-form="feedback"` («Залишити відгук» на главной). Сейчас: tel/Telegram/якорь. Карточки «сума = результат» на `/donation`: `section#impact[hidden]`, показываются только при заполненных `data-amount` и `data-result`.
 **Словарь:** `assets/i18n-dict.js` — блоки `ro:` и `en:`; ключ = нормализованная украинская строка текстового узла (или alt/aria-label/title). Правило: **только добавления**, в конец блока, под комментарием `/* ---- slice N ---- */`. Ключи с эмодзи старых версий оставлены.
 **Сборка домена:** `tools/build-domain.sh` копирует `assets food courses donation favicon.ico robots.txt sitemap.xml *.html` и подменяет `<base>` на `/`.
-**URL-форма:** `canonical`/`og:url` без слэша, а prod редиректит на слэш; `sitemap.xml` повторяет canonical — выбор формы за владельцем (G8).
+**URL-форма (решение владельца 23.10.2026, `DECISIONS_REPORT.md`):** `canonical`, `og:url`, JSON-LD `url` и `sitemap.xml` — со слэшем на конце (`/courses/`, `/food/`, `/donation/`); внутренние ссылки навигации не менялись (prod редиректит на слэш).
 
 ---
 
 ## 6. Инварианты и как их проверять
 - **Платежи (побайтно):** WayForPay разовая `https://secure.wayforpay.com/donate/d645a94f6a237`, регулярная `…/db52afa6592ea` (в `assets/donation.js`, объект `URLS`); Monobank `https://send.monobank.ua/jar/8cZpfkd4Xh` (на `/food`); IBAN `UA563077700000026007111264936`; ЄДРПОУ `46285356`; получатель «РО «РЕЛІГІЙНА ГРОМАДА СВІДОМОСТІ КРІШНИ В МІСТІ ЧЕРНІВЦІ»»; назначение «Добровільна пожертва».
-- **Платёжные QR не перегенерировать:** git-хэши `assets/qr-onetime.png` = `552190620ad6a673ed07d2bf274e8ef99dbdfb0b`, `assets/qr-regular.png` = `f4d1d562c5386a359230ce6ca0595ea2f3968572`; декод — `…/d645a94f6a237?ref=qr` и `…/db52afa6592ea?ref=qr`. (`tg-qr.png` пересоздан в срезе 6: `0eb3e70abea7…`.)
+- **Платёжные QR:** пересобраны 23.10.2026 по разрешению владельца из точной матрицы модулей (`docs/handoff/scripts/master/qrbuild.js`), декод совпадает побайтно (jsQR + CoreImage). Новые git-хэши: `assets/qr-onetime.png` = `027e6ece412b96b44ad61a2388764a34ce77cd42`, `assets/qr-regular.png` = `272431b5ee7620d2846dfa8eae22a6b6d30f94da`, `assets/tg-qr.png` = `a1af154af49f973607177374162ab2dc86d5e75f`; декод — `…/d645a94f6a237?ref=qr`, `…/db52afa6592ea?ref=qr`, `https://t.me/+bGy8LgS8jTQ0YzNi`. Без отдельного слова больше не перегенерировать.
 - **Телефоны:** храм `+380633117500`, `+380951440568`; Роман Гунчак (Їжа життя) `+380503740334`; Ануґатья д.д. (пожертви) `+380633203940`. Адрес: «вул. Скальда (Комарова), 40А, Чернівці». Расписание: вс 13:30–17:30, сб 08:00; раздача Їжі життя сб 14:00, Соборна площа.
 - **Видео «Шпальта Медіа» (YouTube `0ZNyLSHUgpc`)** на `/food` (фасад, embed создаётся по клику через youtube-nocookie).
 - **Корешки книг** `data-title="БГАҐАВАД-ҐІТА"` и др. не переводить и не менять написание.
