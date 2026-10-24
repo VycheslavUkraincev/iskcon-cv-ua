@@ -1,8 +1,0 @@
-// per-section heights base vs new, and elements at given page rows
-const { chromium } = require(process.env.T+'/node_modules/playwright');
-const [pg,w,rows]=[process.argv[2],+process.argv[3],process.argv[4]];
-const CSS='.avatar-widget,.avatar-card{display:none!important}*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1!important;transform:none!important}';
-(async()=>{const br=await chromium.launch({channel:'chrome'});const res={};
-for(const [n,b] of [['old','http://127.0.0.1:8769/iskcon-cv-ua/'],['new','http://127.0.0.1:8765/iskcon-cv-ua/']]){const c=await br.newContext({viewport:{width:w,height:900},reducedMotion:'reduce'});const p=await c.newPage();await p.goto(b+pg,{waitUntil:'load'});await p.addStyleTag({content:CSS});await p.waitForTimeout(500);
- res[n]=await p.evaluate(rows=>{const s=[...document.querySelectorAll('header, main > section, main > div, footer')].map(e=>(e.id||e.className.split(' ').slice(-1)[0]||e.tagName)+':'+Math.round(e.getBoundingClientRect().height));let at=[];if(rows){const [a,b]=rows.split('-').map(Number);at=[...document.querySelectorAll('h1,h2,h3,p,a,li,div,span,b')].filter(e=>{const r=e.getBoundingClientRect();const t=r.top+scrollY;return t<=b&&t+r.height>=a&&e.children.length===0&&e.textContent.trim()}).map(e=>e.tagName+'.'+e.className+' «'+e.textContent.trim().slice(0,30)+'»').slice(0,8)}return {s,at}},rows);await c.close()}
-const o=res.old.s,nn=res.new.s;o.forEach((x,i)=>{if(x!==nn[i])console.log('  ',x,'→',nn[i])});if(rows)console.log('  at rows',rows,res.new.at.join(' | '));await br.close()})();
