@@ -36,7 +36,7 @@
 | Живой сайт | https://iskcon.cv.ua/ (Apache; собирается `tools/build-domain.sh` из ветки с `<base href="/">`). Зеркало GitHub Pages: https://vycheslavukraincev.github.io/iskcon-cv-ua/ |
 | `gh` | авторизован как `VycheslavUkraincev` (scopes `repo`, `gist`, `read:org`) |
 | Git-идентичность | в системе не настроена: коммиты идут с авто-именем; в трейлере коммитов: `Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>` (так требовал system-reminder) |
-| Публикация на живой сайт | **только по отдельному решению владельца.** План, если скажет: тег `pre-redesign-snapshot` на текущем `gh-pages` → слияние `mockup-v2` в `gh-pages` без force → проверка iskcon.cv.ua. Перед этим закрыть открытые вопросы (раздел 9). |
+| Публикация на живой сайт | **только по отдельному решению владельца.** План, если скажет: тег `pre-redesign-snapshot` на текущем `gh-pages` → слияние ветки выпуска `release-2026-10-23` (= `mockup-v2` без внутренних документов) в `gh-pages` без force — **сам мердж обновляет только зеркало GitHub Pages** → живой домен собирается `tools/build-domain.sh` (папка `dist-domain`, `<base href="/">`) и выкладывается `tools/deploy.sh dist-domain` (сначала `--dry-run`; скрипт делает архив `public_html` на сервере) → проверка iskcon.cv.ua. Перед этим закрыть открытые вопросы (раздел 9). |
 
 **Превью — обновление после каждого среза (процедура).** Локальный клон превью был в `/private/tmp/claude-501/-Users-sergiyshakola-projects-iskcon-v2-s1/preview` (remote `preview`). Если его нет: `git clone https://github.com/VycheslavUkraincev/iskcon-mockup-v2-preview.git`, в клоне задать `user.name`/`user.email`. Затем в клоне:
 ```
