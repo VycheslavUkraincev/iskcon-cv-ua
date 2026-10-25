@@ -1,0 +1,5 @@
+const { chromium } = require(process.env.T+'/node_modules/playwright');
+(async()=>{const br=await chromium.launch({channel:'chrome'});
+for(const pg of ['','food/','donation/','courses/']){const p=await br.newPage({viewport:{width:1440,height:900}});await p.goto('http://127.0.0.1:8765/iskcon-cv-ua/'+pg,{waitUntil:'load'});await p.waitForTimeout(400);
+ const r=await p.evaluate(()=>{const out=[];document.querySelectorAll('body *').forEach(e=>{const has=[...e.childNodes].some(n=>n.nodeType===3&&n.nodeValue.trim());if(!has)return;const cs=getComputedStyle(e);const f=cs.fontFamily.split(',')[0].replace(/"/g,'');const bad=(f==='Arial'||f==='ui-monospace')||(f==='Spectral'&&!((cs.fontWeight==='600'&&cs.fontStyle==='normal')||(cs.fontWeight==='400'&&cs.fontStyle==='italic')))||(f==='Onest'&&cs.fontStyle!=='normal');if(bad)out.push(f+' '+cs.fontWeight+' '+cs.fontStyle+' | '+e.tagName.toLowerCase()+'.'+[...e.classList].join('.')+' | '+cs.fontFamily.slice(0,40)+' | '+e.textContent.trim().slice(0,30))});return [...new Set(out)]});
+ console.log('==',pg||'/');r.forEach(x=>console.log('  ',x));await p.close()}await br.close()})();

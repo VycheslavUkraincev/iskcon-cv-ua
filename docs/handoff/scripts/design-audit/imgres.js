@@ -1,0 +1,8 @@
+const { chromium } = require(process.env.T+'/node_modules/playwright');
+(async()=>{const br=await chromium.launch({channel:'chrome'});const seen=new Set();
+for(const [w,dpr] of [[375,2],[390,3],[768,2],[1440,2]])for(const pg of ['','courses/','food/','donation/','404.html']){const c=await br.newContext({viewport:{width:w,height:900},deviceScaleFactor:dpr});const p=await c.newPage();
+ await p.goto('http://127.0.0.1:8765/iskcon-cv-ua/'+pg,{waitUntil:'load'});await p.evaluate(async()=>{for(let y=0;y<document.body.scrollHeight;y+=500){scrollTo(0,y);await new Promise(r=>setTimeout(r,50))}});await p.waitForTimeout(600);
+ const r=await p.evaluate(async()=>{const out=[];for(const im of document.images){if(im.closest('.avatar-widget,.avatar-card,.lightbox'))continue;const b=im.getBoundingClientRect();if(b.width<40||!im.currentSrc)continue;const x=new Image();x.src=im.currentSrc;await x.decode().catch(()=>{});const real=x.naturalWidth;const fitW=getComputedStyle(im).objectFit==='cover'&&x.naturalHeight?Math.max(b.width,b.height*x.naturalWidth/x.naturalHeight):b.width;const cands=(im.srcset||'').split(',').map(s=>parseInt(s.trim().split(' ')[1])).filter(Boolean);
+ out.push({src:im.currentSrc.split('/').slice(-1)[0],css:Math.round(fitW),real,ratio:Math.round(real/fitW*100)/100,maxCand:cands.length?Math.max(...cands):real,svg:/\.svg/.test(im.currentSrc)})}return out});
+ for(const i of r){if(i.svg)continue;if(i.ratio<Math.min(dpr,2)*0.9){const k=pg+i.src+w;if(seen.has(k))continue;seen.add(k);console.log(pg||'/',w+'@'+dpr,i.src,'css(cover)',i.css,'file',i.real,'density',i.ratio,'largest candidate',i.maxCand)}}
+ await c.close()}await br.close()})();

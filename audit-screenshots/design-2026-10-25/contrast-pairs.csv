@@ -1,0 +1,518 @@
+palette,page,section,element,fg,bg,ratio,font_px,weight,large,verdict,widths,background_note,sample_text
+cloud,/,body,div#avatarBubble.avatar-bubble,#96570C,#FFFFFF,5.73,13.1,600,False,AA,1440,,Харе Крішна
+cloud,/,footer#contacts.site-footer,a,#C9A24B,#0F172A,7.44,15.7,600,False,AAA,375/1440,,063-311-7500
+cloud,/,footer#contacts.site-footer,p,#F1F5F9,#0F172A,16.3,14.1,400,False,AAA,375/1440,,РО «Релігійна громада свідомості
+cloud,/,footer#contacts.site-footer,p.site-footer__line,#F1F5F9,#0F172A,16.3,15.7,400,False,AAA,375/1440,,"вул. Скальда (Комарова), 40А, Че"
+cloud,/,footer#contacts.site-footer,span,#F1F5F9,#0F172A,16.3,15.7,400,False,AAA,375/1440,,","
+cloud,/,header.site-header,a,#96570C,#FBF0DC,5.07,15.2,400,False,AA,1440,,Головна
+cloud,/,header.site-header,a,#96570C,#FFFCF5,5.59,15.2,400,False,AA,1440,,Навчання
+cloud,/,header.site-header,b,#96570C,#FFFCF5,5.59,12.5,600,False,AA,375/1440,,ІСККОН ЧЕРНІВЦІ
+cloud,/,header.site-header,button.lang-btn,#000000,#FFFCF5,20.49,12.8,400,False,AAA,375/1440,,EN
+cloud,/,header.site-header,button.lang-btn,#FFFFFF,#96570C,5.73,12.8,400,False,AA,375/1440,,UK
+cloud,/,section#faq.sec.sec--faq,em,#2B2117,#FFFCF5,15.38,17,400,False,AAA,375/1440,,ахімса
+cloud,/,section#faq.sec.sec--faq,h2.sec__title,#2B2117,#FBF6ED,14.64,28,600,True,AAA,375/1440,,Часті питання
+cloud,/,section#faq.sec.sec--faq,p,#2B2117,#FFFCF5,15.38,17,400,False,AAA,375/1440,,Повна версія – близько 5 годин. 
+cloud,/,section#faq.sec.sec--faq,summary,#2B2117,#FFFCF5,15.38,16.8,600,False,AAA,375/1440,,Скільки триває програма?
+cloud,/,section#main.sec.sec--welcome,h2.sec__title,#2B2117,#FBF6ED,14.64,28,600,True,AAA,375/1440,,Чи можна просто прийти в неділю 
+cloud,/,section#main.sec.sec--welcome,p.lead,#2B2117,#FBF6ED,14.64,18.4,400,False,AAA,375/1440,,Відвідайте нашу недільну програм
+cloud,/,section#map.sec.sec--map,a.btn.btn-primary,#FFFFFF,#B0512F,5.17,16,600,False,AA,375/1440,,Прокласти маршрут
+cloud,/,section#map.sec.sec--map,b,#2B2117,#FBF6ED,14.64,18.4,700,False,AAA,375/1440,,"вул. Скальда (Комарова), 40А, Че"
+cloud,/,section#map.sec.sec--map,h2.sec__title,#2B2117,#FBF6ED,14.64,28,600,True,AAA,375/1440,,Як нас знайти
+cloud,/,section#paths.sec.sec--paths,a,#96570C,#FFFCF5,5.59,17,600,False,AA,375/1440,,Обрати курс →
+cloud,/,section#paths.sec.sec--paths,h2.sec__title,#2B2117,#FBF6ED,14.64,28,600,True,AAA,375/1440,,"Чим тут можна займатися, крім не"
+cloud,/,section#paths.sec.sec--paths,h3,#2B2117,#FFFCF5,15.38,25.6,600,True,AAA,375/1440,,Навчання
+cloud,/,section#paths.sec.sec--paths,p,#2B2117,#FFFCF5,15.38,17,400,False,AAA,375/1440,,"Курси ведичної філософії, куліна"
+cloud,/,section#paths.sec.sec--paths,p.path__kicker,#96570C,#FFFCF5,5.59,12.8,700,False,AA,375/1440,,Їжа життя
+cloud,/,section#paths.sec.sec--paths,p.path__where,#2B2117,#FFFCF5,15.38,17,600,False,AAA,375/1440,,"Соборна площа, щосуботи о 14:00"
+cloud,/,section#reviews.sec.sec--cloud.sec--reviews,a.btn,#0F172A,#F1F5F9,16.3,16,600,False,AAA,375/1440,,Читати всі відгуки
+cloud,/,section#reviews.sec.sec--cloud.sec--reviews,a.btn.btn-ghost,#E9A23B,#0F172A,8.24,16,600,False,AAA,375/1440,,Залишити відгук
+cloud,/,section#reviews.sec.sec--cloud.sec--reviews,blockquote,#F1F5F9,#1E293B,13.35,18.4,400,False,AAA,375/1440,,"«Прекрасне місце для тих, хто в "
+cloud,/,section#reviews.sec.sec--cloud.sec--reviews,div.review__stars,#B77A12,#1E293B,4.04,17,400,False,FAIL,375/1440,,★★★★★
+cloud,/,section#reviews.sec.sec--cloud.sec--reviews,figcaption,#F1F5F9,#1E293B,13.35,17,600,False,AAA,375/1440,,Ірина Михайлюк
+cloud,/,section#reviews.sec.sec--cloud.sec--reviews,h2.sec__title,#F1F5F9,#0F172A,16.3,28,600,True,AAA,375/1440,,Відгуки відданих і учасників гро
+cloud,/,section#schedule.sec.sec--cloud.sec--schedule,a.btn.btn-ghost,#E9A23B,#1E293B,6.75,15.2,600,False,AA,375/1440,,Додати в календар
+cloud,/,section#schedule.sec.sec--cloud.sec--schedule,b,#F1F5F9,#0F172A,16.3,15.2,700,False,AAA,375/1440,,Мангала-араті
+cloud,/,section#schedule.sec.sec--cloud.sec--schedule,b,#F1F5F9,#1E293B,13.35,15.2,700,False,AAA,375/1440,,Кіртан
+cloud,/,section#schedule.sec.sec--cloud.sec--schedule,b.next-sunday__date,#E9A23B,#1E293B,6.75,19.2,600,False,AA,375/1440,,", 13:30"
+cloud,/,section#schedule.sec.sec--cloud.sec--schedule,button.btn.btn-ghost,#E9A23B,#1E293B,6.75,15.2,600,False,AA,375/1440,,Запросити друга
+cloud,/,section#schedule.sec.sec--cloud.sec--schedule,button.next-sunday__ics,#CBD5E1,#1E293B,9.85,14.1,400,False,AAA,375/1440,,або завантажте файл .ics
+cloud,/,section#schedule.sec.sec--cloud.sec--schedule,em,#F1F5F9,#0F172A,16.3,15.2,400,False,AAA,375/1440,,(ранкова служба)
+cloud,/,section#schedule.sec.sec--cloud.sec--schedule,h2.sec__title,#F1F5F9,#0F172A,16.3,28,600,True,AAA,375/1440,,О котрій усе починається — і скі
+cloud,/,section#schedule.sec.sec--cloud.sec--schedule,h3,#F1F5F9,#0F172A,16.3,20.8,600,False,AAA,375/1440,,Суботня ранкова програма
+cloud,/,section#schedule.sec.sec--cloud.sec--schedule,p.note,#CBD5E1,#0F172A,12.02,15.2,400,False,AAA,375/1440,,Святкові програми за вайшнавськи
+cloud,/,section#schedule.sec.sec--cloud.sec--schedule,p.sec__sub,#CBD5E1,#0F172A,12.02,17,400,False,AAA,375/1440,,Кожної неділі зустрічаємось у на
+cloud,/,section#schedule.sec.sec--cloud.sec--schedule,span,#E9A23B,#1E293B,6.75,19.2,600,False,AA,375/1440,,25 жовтня
+cloud,/,section#schedule.sec.sec--cloud.sec--schedule,span,#F1F5F9,#0F172A,16.3,15.2,400,False,AAA,375/1440,,Лекція зі Шрімад-Бгаґаватам
+cloud,/,section#schedule.sec.sec--cloud.sec--schedule,span,#F1F5F9,#1E293B,13.35,15.2,400,False,AAA,375/1440,,— оспівування маха-мантри
+cloud,/,section#schedule.sec.sec--cloud.sec--schedule,span.next-sunday__k,#F1F5F9,#1E293B,13.35,19.2,400,False,AAA,375/1440,,Найближча неділя:
+cloud,/,section#schedule.sec.sec--cloud.sec--schedule,span.t,#E9A23B,#0F172A,8.24,19.2,600,False,AAA,375/1440,,08:00
+cloud,/,section#schedule.sec.sec--cloud.sec--schedule,span.t,#E9A23B,#1E293B,6.75,24,600,True,AAA,375/1440,,13:30
+cloud,/,section#visit.sec.sec--visit,a,#96570C,#F4EBDA,4.84,17,600,False,AA,375/1440,,Усі питання →
+cloud,/,section#visit.sec.sec--visit,em,#2B2117,#FFFCF5,15.38,17,400,False,AAA,375/1440,,ахімса
+cloud,/,section#visit.sec.sec--visit,h2.sec__title,#2B2117,#F4EBDA,13.31,28,600,True,AAA,375/1440,,Що вдягнути — і чи треба щось бр
+cloud,/,section#visit.sec.sec--visit,h3,#2B2117,#FFFCF5,15.38,20,600,False,AAA,375/1440,,Чи це часом не секта?
+cloud,/,section#visit.sec.sec--visit,p,#2B2117,#FFFCF5,15.38,17,400,False,AAA,375/1440,,Ні. Наш рух є частиною давньої в
+cloud,/,section#visit.sec.sec--visit,p.visit__lead,#2B2117,#F4EBDA,13.31,18.4,400,False,AAA,375/1440,,"Ні, просто приходьте в зручному "
+cloud,/,section.hero-home,a.btn.btn-primary,#FFFFFF,#B0512F,5.17,16,600,False,AA,375/1440,,Прийти в неділю
+cloud,/,section.hero-home,h1#hero-title,#FBF6ED,#0F172A,16.58,32,600,True,AAA,375/1440,,Простір внутрішнього спокою
+cloud,/,section.hero-home,p.hero-home__lede,#FBF6ED,#0F172A,16.58,16,400,False,AAA,375/1440,,Центр ведичної культури: недільн
+cloud,/,section.hero-home,p.hero-home__when,#FBF6ED,#0F172A,16.58,16.3,600,False,AAA,375/1440,,Щонеділі о 13:30 · вул. Скальда 
+cloud,/,section.hero-home,span.hero-home__kicker,#C9A24B,#0F172A,7.44,13.6,600,False,AAA,375/1440,photo@img.hero-home__img,Чернівці · ІСККОН
+cloud,/,section.sec.sec--cloud.sec--gallery,a,#E9A23B,#0F172A,8.24,15.2,400,False,AAA,375/1440,,Instagram
+cloud,/,section.sec.sec--cloud.sec--gallery,h2.sec__title,#F1F5F9,#0F172A,16.3,28,600,True,AAA,375/1440,,Життя храму
+cloud,/,section.sec.sec--cloud.sec--gallery,p.note,#CBD5E1,#0F172A,12.02,15.2,400,False,AAA,375/1440,,Більше фото — в нашому
+cloud,/,section.sec.sec--cloud.sec--gallery,p.sec__sub,#CBD5E1,#0F172A,12.02,17,400,False,AAA,375/1440,,"Гаура-пурніма, Чернівці — свято,"
+cloud,/,section.sec.sec--dark.sec--philosophy,a,#C9A24B,#0F172A,7.44,17,400,False,AAA,375/1440,,Бгагавад-гіта
+cloud,/,section.sec.sec--dark.sec--philosophy,a.more,#C9A24B,#0F172A,7.44,17,600,False,AAA,375/1440,,До курсів →
+cloud,/,section.sec.sec--dark.sec--philosophy,h2.sec__title,#FBF6ED,#0F172A,16.58,28,600,True,AAA,375/1440,,У що ви вірите — і чи обов'язков
+cloud,/,section.sec.sec--dark.sec--philosophy,h3,#FBF6ED,#0F172A,16.58,24,600,True,AAA,375/1440,,Лекції з філософії
+cloud,/,section.sec.sec--dark.sec--philosophy,p,#FBF6ED,#0F172A,16.58,17,400,False,AAA,375/1440,,"Знайомство з Бгаґавад-Ґітою, зак"
+cloud,/,section.sec.sec--dark.sec--philosophy,p.mantra,#C9A24B,#0F172A,7.44,22.4,400,False,AAA,375/1440,,"Харе Крішна, Харе Крішна,"
+cloud,/,section.sec.sec--founder,a,#645441,#FBF6ED,6.76,12.5,400,False,AA,375/1440,,CC BY 3.0
+cloud,/,section.sec.sec--founder,a,#96570C,#FBF6ED,5.32,17,400,False,AA,375/1440,,Читати у Вікіпедії →
+cloud,/,section.sec.sec--founder,b,#2B2117,#FBF6ED,14.64,17,700,False,AAA,375/1440,,А.Ч. Бгактіведанта Свамі Прабгуп
+cloud,/,section.sec.sec--founder,figcaption,#645441,#FBF6ED,6.76,14.1,400,False,AA,375/1440,,Скульптурна композиція · фото 20
+cloud,/,section.sec.sec--founder,figcaption.founder__cap,#645441,#FBF6ED,6.76,13.6,400,False,AA,375/1440,,"Ранкова прогулянка · Німеччина, "
+cloud,/,section.sec.sec--founder,h2.sec__title,#2B2117,#FBF6ED,14.64,28,600,True,AAA,375/1440,,Засновник
+cloud,/,section.sec.sec--founder,h3,#2B2117,#FFFCF5,15.38,20,600,False,AAA,375/1440,,Бгаґавад-Ґіта як вона є
+cloud,/,section.sec.sec--founder,p,#2B2117,#FBF6ED,14.64,17,400,False,AAA,375/1440,,(1896–1977)
+cloud,/,section.sec.sec--founder,p,#2B2117,#FFFCF5,15.38,17,400,False,AAA,375/1440,,Діалог Крішни й Арджуни. Перекла
+cloud,/,section.sec.sec--founder,p.founder__credits,#645441,#FBF6ED,6.76,12.5,400,False,AA,375/1440,,Фото й підпис — Wikimedia Common
+cloud,/,section.sec.sec--founder,p.sec__sub.books-intro,#645441,#FBF6ED,6.76,17,400,False,AA,375/1440,,Книги в перекладі Шріли Прабгупа
+cloud,/,section.sec.sec--steps,h2.sec__title,#2B2117,#F4EBDA,13.31,28,600,True,AAA,375/1440,,"Що буде, коли я зайду всередину?"
+cloud,/,section.sec.sec--steps,h3,#2B2117,#FFFCF5,15.38,21.6,600,False,AAA,375/1440,,Прийдіть у неділю
+cloud,/,section.sec.sec--steps,p,#2B2117,#FFFCF5,15.38,17,400,False,AAA,375/1440,,Просто прийдіть о 13:30. Нічого 
+cloud,/,section.sec.sec--steps,p.sec__sub,#645441,#F4EBDA,6.15,17,400,False,AA,375/1440,,Якщо ви вперше — ось три прості 
+cloud,/,section.sec.sec--who,h2.sec__title,#2B2117,#FBF6ED,14.64,28,600,True,AAA,375/1440,,Це тільки для вірян — чи можна і
+cloud,/,section.sec.sec--who,li,#2B2117,#FBF6ED,14.64,17,400,False,AAA,375/1440,,Шукаєте Бога та прагнете духовно
+cloud,/,section.sec.sec--who,p,#2B2117,#FBF6ED,14.64,21.6,600,False,AAA,375/1440,,"Вам варто завітати до нас, якщо "
+cloud,/,section.sec.sec--who,p.who-close,#2B2117,#FBF6ED,14.64,20.8,400,False,AAA,375/1440,,"Це простір для всіх, хто хоче бі"
+cloud,404.html,footer.site-footer,a,#C9A24B,#0F172A,7.44,15.7,600,False,AAA,375/1440,,063-311-7500
+cloud,404.html,footer.site-footer,p,#F1F5F9,#0F172A,16.3,14.1,400,False,AAA,375/1440,,РО «Релігійна громада свідомості
+cloud,404.html,footer.site-footer,p.site-footer__line,#F1F5F9,#0F172A,16.3,15.7,400,False,AAA,375/1440,,"вул. Скальда (Комарова), 40А, Че"
+cloud,404.html,footer.site-footer,span,#F1F5F9,#0F172A,16.3,15.7,400,False,AAA,375/1440,,","
+cloud,404.html,header.site-header,a,#96570C,#FFFCF5,5.59,15.2,400,False,AA,1440,,Головна
+cloud,404.html,header.site-header,b,#96570C,#FFFCF5,5.59,12.5,600,False,AA,375/1440,,ІСККОН ЧЕРНІВЦІ
+cloud,404.html,header.site-header,button.lang-btn,#000000,#FFFCF5,20.49,12.8,400,False,AAA,375/1440,,EN
+cloud,404.html,header.site-header,button.lang-btn,#FFFFFF,#96570C,5.73,12.8,400,False,AA,375/1440,,UK
+cloud,404.html,section.page-hero.not-found,a.btn.btn-primary,#FFFFFF,#B0512F,5.17,16,600,False,AA,375/1440,,Повернутися на головну
+cloud,404.html,section.page-hero.not-found,h1,#F1F5F9,#0F172A,16.3,32,600,True,AAA,375/1440,,Сторінку не знайдено
+cloud,404.html,section.page-hero.not-found,p.lede,#EADFC8,#0F172A,13.51,18.4,400,False,AAA,375/1440,,"Можливо, адресу введено з помилк"
+cloud,courses/,body,div#avatarBubble.avatar-bubble,#96570C,#FFFFFF,5.73,13.1,600,False,AA,1440,,Харе Крішна
+cloud,courses/,footer#contacts.site-footer,a,#C9A24B,#0F172A,7.44,15.7,600,False,AAA,375/1440,,063-311-7500
+cloud,courses/,footer#contacts.site-footer,p,#F1F5F9,#0F172A,16.3,14.1,400,False,AAA,375/1440,,РО «Релігійна громада свідомості
+cloud,courses/,footer#contacts.site-footer,p.site-footer__line,#F1F5F9,#0F172A,16.3,15.7,400,False,AAA,375/1440,,"вул. Скальда (Комарова), 40А, Че"
+cloud,courses/,footer#contacts.site-footer,span,#F1F5F9,#0F172A,16.3,15.7,400,False,AAA,375/1440,,","
+cloud,courses/,header.site-header,a,#96570C,#FBF0DC,5.07,15.2,400,False,AA,1440,,Навчання
+cloud,courses/,header.site-header,a,#96570C,#FFFCF5,5.59,15.2,400,False,AA,1440,,Головна
+cloud,courses/,header.site-header,b,#96570C,#FFFCF5,5.59,12.5,600,False,AA,375/1440,,ІСККОН ЧЕРНІВЦІ
+cloud,courses/,header.site-header,button.lang-btn,#000000,#FFFCF5,20.49,12.8,400,False,AAA,375/1440,,EN
+cloud,courses/,header.site-header,button.lang-btn,#FFFFFF,#96570C,5.73,12.8,400,False,AA,375/1440,,UK
+cloud,courses/,section#main.sec.sec--courses,a,#96570C,#FFFCF5,5.59,24,600,True,AAA,375/1440,,063-311-7500
+cloud,courses/,section#main.sec.sec--courses,a.btn.btn-ghost,#96570C,#FFFCF5,5.59,16,600,False,AA,375/1440,,Написати в Telegram
+cloud,courses/,section#main.sec.sec--courses,a.btn.btn-primary,#FFFFFF,#B0512F,5.17,16,600,False,AA,375/1440,,Записатися на курс
+cloud,courses/,section#main.sec.sec--courses,a.btn.btn-primary.course-join__btn,#FFFFFF,#B0512F,5.17,15.2,600,False,AA,375/1440,,Записатися на курс
+cloud,courses/,section#main.sec.sec--courses,b,#2B2117,#FFFCF5,15.38,17,700,False,AAA,375/1440,,Хто Я?
+cloud,courses/,section#main.sec.sec--courses,h2,#2B2117,#FFFCF5,15.38,22.4,600,False,AAA,375/1440,,Ведична філософія
+cloud,courses/,section#main.sec.sec--courses,li,#2B2117,#FFFCF5,15.38,17,400,False,AAA,375/1440,,— краще зрозуміти себе
+cloud,courses/,section#main.sec.sec--courses,p,#2B2117,#FFFCF5,15.38,17,400,False,AAA,375/1440,,Глибоке занурення у ведичну мудр
+cloud,courses/,section#main.sec.sec--courses,p.note,#645441,#FFFCF5,7.1,15.2,400,False,AAA,375/1440,,"Telegram, Viber, WhatsApp"
+cloud,courses/,section.bookshelf.sec--dark,a,#C9A24B,#0F172A,7.44,14.4,600,False,AAA,375/1440,,Читати →
+cloud,courses/,section.bookshelf.sec--dark,b,#FBF6ED,#0F172A,16.58,16.3,700,False,AAA,375/1440,,Бгаґавад-ґіта
+cloud,courses/,section.bookshelf.sec--dark,h2,#FBF6ED,#0F172A,16.58,28,600,True,AAA,375/1440,,Ведична бібліотека
+cloud,courses/,section.bookshelf.sec--dark,p.lead,#E3D5B8,#0F172A,12.31,17.6,400,False,AAA,375/1440,,Священні тексти українською — чи
+cloud,courses/,section.bookshelf.sec--dark,span,#D9C9A8,#0F172A,10.94,14.1,400,False,AAA,375/1440,,Діалог Крішни та Арджуни
+cloud,courses/,section.page-hero,h1,#F1F5F9,#0F172A,16.3,32,600,True,AAA,375/1440,,Навчання та розвиток
+cloud,courses/,section.page-hero,p.lede,#EADFC8,#0F172A,13.51,18.4,400,False,AAA,375/1440,,Обирайте курс та записуйтесь — б
+cloud,courses/,section.scene-band,p.scene-band__line,#FBF6ED,#0F172A,16.58,20.8,600,False,AAA,375/1440,,Кіртан — серце нашої духовної пр
+cloud,courses/,section.sec.sec--more,a,#96570C,#FBF6ED,5.32,16.8,400,False,AA,375/1440,,ведичні тексти українською
+cloud,courses/,section.sec.sec--more,p.note.more-note,#645441,#FBF6ED,6.76,16.8,400,False,AA,375/1440,,Хочете глибше? Читайте
+cloud,donation/,body,div#avatarBubble.avatar-bubble,#96570C,#FFFFFF,5.73,13.1,600,False,AA,1440,,Харе Крішна
+cloud,donation/,footer.site-footer,a,#C9A24B,#0F172A,7.44,15.7,600,False,AAA,375/1440,,063-311-7500
+cloud,donation/,footer.site-footer,p,#F1F5F9,#0F172A,16.3,14.1,400,False,AAA,375/1440,,РО «Релігійна громада свідомості
+cloud,donation/,footer.site-footer,p.site-footer__line,#F1F5F9,#0F172A,16.3,15.7,400,False,AAA,375/1440,,"вул. Скальда (Комарова), 40А, Че"
+cloud,donation/,footer.site-footer,span,#F1F5F9,#0F172A,16.3,15.7,400,False,AAA,375/1440,,","
+cloud,donation/,header.site-header,a,#96570C,#FBF0DC,5.07,15.2,400,False,AA,1440,,Пожертви
+cloud,donation/,header.site-header,a,#96570C,#FFFCF5,5.59,15.2,400,False,AA,1440,,Головна
+cloud,donation/,header.site-header,b,#96570C,#FFFCF5,5.59,12.5,600,False,AA,375/1440,,ІСККОН ЧЕРНІВЦІ
+cloud,donation/,header.site-header,button.lang-btn,#000000,#FFFCF5,20.49,12.8,400,False,AAA,375/1440,,EN
+cloud,donation/,header.site-header,button.lang-btn,#FFFFFF,#96570C,5.73,12.8,400,False,AA,375/1440,,UK
+cloud,donation/,section#contacts.sec.sec--contacts-food,a.contacts__tel,#96570C,#FFFCF5,5.59,20,700,True,AAA,375/1440,,063-320-3940
+cloud,donation/,section#contacts.sec.sec--contacts-food,b,#2B2117,#FFFCF5,15.38,17,700,False,AAA,375/1440,,Ануґатья д.д.:
+cloud,donation/,section#contacts.sec.sec--contacts-food,h2.sec__title,#2B2117,#FBF6ED,14.64,28,600,True,AAA,375/1440,,Контакти
+cloud,donation/,section#contacts.sec.sec--contacts-food,span.contacts__note,#645441,#FFFCF5,7.1,17,400,False,AAA,375/1440,,"Telegram, Viber, WhatsApp"
+cloud,donation/,section#give.sec.sec--cloud.sec--give,button.btn.btn-ghost,#E9A23B,#1E293B,6.75,16,600,False,AA,375/1440,,Разова пожертва
+cloud,donation/,section#give.sec.sec--cloud.sec--give,button.btn.btn-primary,#FFFFFF,#B0512F,5.17,16,600,False,AA,375/1440,,Регулярна пожертва
+cloud,donation/,section#give.sec.sec--cloud.sec--give,h2.sec__title,#F1F5F9,#0F172A,16.3,28,600,True,AAA,375/1440,,Зробити пожертву
+cloud,donation/,section#give.sec.sec--cloud.sec--give,h3,#96570C,#1E293B,2.55,27.2,600,True,FAIL,375/1440,,Поточні потреби храму
+cloud,donation/,section#give.sec.sec--cloud.sec--give,h3,#96570C,#FFFDF8,5.64,27.2,600,True,AAA,375/1440,,Коло друзів храму
+cloud,donation/,section#give.sec.sec--cloud.sec--give,p,#645441,#FFFFFF,7.28,14.4,400,False,AAA,375/1440,,Регулярна пожертва — наведіть ка
+cloud,donation/,section#give.sec.sec--cloud.sec--give,p,#CBD5E1,#FFFFFF,1.48,14.4,400,False,FAIL,375/1440,,Разова пожертва — наведіть камер
+cloud,donation/,section#give.sec.sec--cloud.sec--give,p.donate-hint,#CBD5E1,#0F172A,12.02,15.2,400,False,AAA,375/1440,,Разова — на поточні потреби храм
+cloud,donation/,section#give.sec.sec--cloud.sec--give,p.give__trust,#F1F5F9,#0F172A,16.3,16.8,400,False,AAA,375/1440,,Кошти спрямовуються на оренду пр
+cloud,donation/,section#give.sec.sec--cloud.sec--give,p.give__why,#2B2117,#FFFDF8,15.5,17,400,False,AAA,375/1440,,Регулярні щомісячні внески допом
+cloud,donation/,section#give.sec.sec--cloud.sec--give,p.give__why,#F1F5F9,#1E293B,13.35,17,400,False,AAA,375/1440,,"Разова пожертва — для тих, хто х"
+cloud,donation/,section#give.sec.sec--cloud.sec--give,p.note,#CBD5E1,#0F172A,12.02,15.2,400,False,AAA,375/1440,,Натисніть кнопку — форма оплати 
+cloud,donation/,section#ways.sec.sec--cloud.sec--ways,a.btn.btn-ghost,#E9A23B,#1E293B,6.75,16,600,False,AA,375/1440,,Банка Monobank «Їжі життя»
+cloud,donation/,section#ways.sec.sec--cloud.sec--ways,a.btn.btn-primary,#FFFFFF,#B0512F,5.17,16,600,False,AA,375/1440,,Пожертвувати на храм
+cloud,donation/,section#ways.sec.sec--cloud.sec--ways,a.ways__more,#E9A23B,#1E293B,6.75,17,600,False,AA,375/1440,,Детальніше про «Їжу життя» →
+cloud,donation/,section#ways.sec.sec--cloud.sec--ways,h2#ways-title.sec__title,#F1F5F9,#0F172A,16.3,28,600,True,AAA,375/1440,,Куди спрямувати пожертву?
+cloud,donation/,section#ways.sec.sec--cloud.sec--ways,h3,#96570C,#1E293B,2.55,24,600,True,FAIL,375/1440,,На храм
+cloud,donation/,section#ways.sec.sec--cloud.sec--ways,p,#F1F5F9,#1E293B,13.35,17,400,False,AAA,375/1440,,"Оренда приміщення, комунальні по"
+cloud,donation/,section#ways.sec.sec--cloud.sec--ways,p.ways__lead,#F1F5F9,#0F172A,16.3,17,400,False,AAA,375/1440,,Храм і «Їжа життя» збирають кошт
+cloud,donation/,section.page-hero,h1,#F1F5F9,#0F172A,16.3,32,600,True,AAA,375/1440,,Меценати храму
+cloud,donation/,section.page-hero,p.lede,#EADFC8,#0F172A,13.51,18.4,400,False,AAA,375/1440,,Наш храм живе та розвивається ви
+cloud,donation/,section.scene-band,p.scene-band__line,#FBF6ED,#0F172A,16.58,20.8,600,False,AAA,375/1440,,Ми безмежно вдячні кожному за ще
+cloud,donation/,section.sec.sec--req,a,#96570C,#FBF6ED,5.32,15.2,400,False,AA,375/1440,,opendatabot.ua
+cloud,donation/,section.sec.sec--req,button.copy,#96570C,#FFFFFF,5.73,14.1,400,False,AA,375/1440,,Копіювати
+cloud,donation/,section.sec.sec--req,code#edrpou-val,#2B2117,#F4EBDA,13.31,13.6,400,False,AAA,375/1440,,46285356
+cloud,donation/,section.sec.sec--req,code#iban-val,#2B2117,#F4EBDA,13.31,13.6,400,False,AAA,375/1440,,UA563077700000026007111264936
+cloud,donation/,section.sec.sec--req,code#purp-val,#2B2117,#F4EBDA,13.31,13.6,400,False,AAA,375/1440,,Добровільна пожертва
+cloud,donation/,section.sec.sec--req,code#recv-val,#2B2117,#F4EBDA,13.31,13.6,400,False,AAA,375/1440,,РО «РЕЛІГІЙНА ГРОМАДА СВІДОМОСТІ
+cloud,donation/,section.sec.sec--req,div.req__k,#645441,#FFFCF5,7.1,11.5,600,False,AAA,375/1440,,IBAN
+cloud,donation/,section.sec.sec--req,h2.sec__title,#2B2117,#FBF6ED,14.64,28,600,True,AAA,375/1440,,Банківські реквізити
+cloud,donation/,section.sec.sec--req,p.note,#645441,#FBF6ED,6.76,15.2,400,False,AA,375/1440,,Прозорість: дані організації —
+cloud,donation/,section.sec.sec--use,b,#2B2117,#FBF6ED,14.64,18.4,700,False,AAA,375/1440,,регулярні щомісячні внески
+cloud,donation/,section.sec.sec--use,em,#645441,#FFFCF5,7.1,14.7,400,False,AAA,375/1440,,(для приготування прасаду)
+cloud,donation/,section.sec.sec--use,h2.sec__title,#2B2117,#FBF6ED,14.64,28,600,True,AAA,375/1440,,На що спрямовуються ваші пожертв
+cloud,donation/,section.sec.sec--use,p.use__more,#2B2117,#FBF6ED,14.64,18.4,400,False,AAA,375/1440,,Налаштуйте
+cloud,donation/,section.sec.sec--use,span,#2B2117,#FFFCF5,15.38,17,600,False,AAA,375/1440,,Оренда приміщення
+cloud,food/,body,div#avatarBubble.avatar-bubble,#96570C,#FFFFFF,5.73,13.1,600,False,AA,1440,,Харе Харе
+cloud,food/,footer.site-footer,a,#C9A24B,#0F172A,7.44,15.7,600,False,AAA,375/1440,,063-311-7500
+cloud,food/,footer.site-footer,p,#F1F5F9,#0F172A,16.3,14.1,400,False,AAA,375/1440,,РО «Релігійна громада свідомості
+cloud,food/,footer.site-footer,p.site-footer__line,#F1F5F9,#0F172A,16.3,15.7,400,False,AAA,375/1440,,"вул. Скальда (Комарова), 40А, Че"
+cloud,food/,footer.site-footer,span,#F1F5F9,#0F172A,16.3,15.7,400,False,AAA,375/1440,,","
+cloud,food/,header.site-header,a,#96570C,#FBF0DC,5.07,15.2,400,False,AA,1440,,Їжа життя
+cloud,food/,header.site-header,a,#96570C,#FFFCF5,5.59,15.2,400,False,AA,1440,,Головна
+cloud,food/,header.site-header,b,#96570C,#FFFCF5,5.59,12.5,600,False,AA,375/1440,,ІСККОН ЧЕРНІВЦІ
+cloud,food/,header.site-header,button.lang-btn,#000000,#FFFCF5,20.49,12.8,400,False,AAA,375/1440,,EN
+cloud,food/,header.site-header,button.lang-btn,#FFFFFF,#96570C,5.73,12.8,400,False,AA,375/1440,,UK
+cloud,food/,section#contacts.sec.sec--contacts-food,a.btn.btn-ghost,#2B2117,#FFFCF5,15.38,15.2,600,False,AAA,375/1440,,Facebook «Їжі життя»
+cloud,food/,section#contacts.sec.sec--contacts-food,a.contacts__tel,#96570C,#FFFCF5,5.59,20,700,True,AAA,375/1440,,050-374-0334
+cloud,food/,section#contacts.sec.sec--contacts-food,b,#2B2117,#FFFCF5,15.38,17,700,False,AAA,375/1440,,Роман Гунчак:
+cloud,food/,section#contacts.sec.sec--contacts-food,h2.sec__title,#2B2117,#FBF6ED,14.64,28,600,True,AAA,375/1440,,Контакти
+cloud,food/,section#contacts.sec.sec--contacts-food,span.contacts__note,#645441,#FFFCF5,7.1,17,400,False,AAA,375/1440,,"Telegram, Viber, WhatsApp"
+cloud,food/,section#support.sec.sec--cloud.sec--support,a,#E9A23B,#1E293B,6.75,15.2,400,False,AA,375/1440,,Monobank-банка
+cloud,food/,section#support.sec.sec--cloud.sec--support,a#donateBtn.btn.btn-primary.widget__btn,#FFFFFF,#B0512F,5.17,17.6,600,False,AA,375/1440,,·
+cloud,food/,section#support.sec.sec--cloud.sec--support,button,#0F172A,#E9A23B,8.24,17,700,False,AAA,375/1440,,1000 ₴
+cloud,food/,section#support.sec.sec--cloud.sec--support,button,#0F172A,#F1F5F9,16.3,17,400,False,AAA,375/1440,,100 ₴
+cloud,food/,section#support.sec.sec--cloud.sec--support,button.copy,#E9A23B,#FFFFFF,2.17,14.1,400,False,FAIL,375/1440,,Копіювати
+cloud,food/,section#support.sec.sec--cloud.sec--support,code,#F1F5F9,#F4EBDA,1.08,13.6,400,False,FAIL,375/1440,,UA563077700000026007111264936
+cloud,food/,section#support.sec.sec--cloud.sec--support,div.req__k,#CBD5E1,#1E293B,9.85,11.5,600,False,AAA,375/1440,,IBAN
+cloud,food/,section#support.sec.sec--cloud.sec--support,div.req__slogan,#E9A23B,#FFFBF2,2.1,20,400,False,FAIL,375/1440,,Годуй · Молись · Люби
+cloud,food/,section#support.sec.sec--cloud.sec--support,div.req__v,#F1F5F9,#1E293B,13.35,14.4,400,False,AAA,375/1440,,РО «РЕЛІГІЙНА ГРОМАДА СВІДОМОСТІ
+cloud,food/,section#support.sec.sec--cloud.sec--support,h2.sec__title,#F1F5F9,#0F172A,16.3,28,600,True,AAA,375/1440,,Підтримати «Їжу життя»
+cloud,food/,section#support.sec.sec--cloud.sec--support,h3,#96570C,#1E293B,2.55,25.6,600,True,FAIL,375/1440,,Подаруй тарілку тепла й любові
+cloud,food/,section#support.sec.sec--cloud.sec--support,h3,#FBF6ED,#0F172A,16.58,20,600,False,AAA,375/1440,,Банківські реквізити
+cloud,food/,section#support.sec.sec--cloud.sec--support,p,#CBD5E1,#1E293B,9.85,17,400,False,AAA,375/1440,,Гарячий обід для
+cloud,food/,section#support.sec.sec--cloud.sec--support,p,#E3D5B8,#0F172A,12.31,14.4,400,False,AAA,375/1440,,Для переказу з картки будь-якого
+cloud,food/,section#support.sec.sec--cloud.sec--support,p.sec__sub,#CBD5E1,#0F172A,12.02,17,400,False,AAA,375/1440,,Кожна гривня стає гарячим обідом
+cloud,food/,section#support.sec.sec--cloud.sec--support,p.support__kicker,#CBD5E1,#0F172A,12.02,12.8,400,False,AAA,375/1440,,Підтримайте місію
+cloud,food/,section#support.sec.sec--cloud.sec--support,p.support__tag,#F1F5F9,#0F172A,16.3,20.8,400,False,AAA,375/1440,,Кожна гривня — це теплий обід
+cloud,food/,section#support.sec.sec--cloud.sec--support,p.widget__more,#F1F5F9,#1E293B,13.35,15.2,400,False,AAA,375/1440,,·
+cloud,food/,section#support.sec.sec--cloud.sec--support,p.widget__note,#CBD5E1,#1E293B,9.85,14.1,400,False,AAA,375/1440,,Оплата карткою · Monobank
+cloud,food/,section#support.sec.sec--cloud.sec--support,p.widget__sub,#CBD5E1,#1E293B,9.85,17,400,False,AAA,375/1440,,Обери суму — і подивись на свій 
+cloud,food/,section#support.sec.sec--cloud.sec--support,span,#FFFFFF,#B0512F,5.17,17.6,600,False,AA,375/1440,,Підтримати
+cloud,food/,section#support.sec.sec--cloud.sec--support,span#donateAmt,#FFFFFF,#B0512F,5.17,17.6,600,False,AA,375/1440,,1 000
+cloud,food/,section#support.sec.sec--cloud.sec--support,span#mealCount,#E9A23B,#1E293B,6.75,48,600,True,AAA,375/1440,,10
+cloud,food/,section#support.sec.sec--cloud.sec--support,span.widget__unit,#CBD5E1,#1E293B,9.85,17.6,400,False,AAA,375/1440,,гарячих обідів
+cloud,food/,section#support.sec.sec--cloud.sec--support,strong,#E9A23B,#1E293B,6.75,17,700,False,AA,375/1440,,дружньої компанії
+cloud,food/,section#volunteer.sec.sec--cloud.sec--help,a,#E9A23B,#1E293B,6.75,17,400,False,AA,375/1440,,зробити внесок
+cloud,food/,section#volunteer.sec.sec--cloud.sec--help,a.btn.btn-ghost,#E9A23B,#1E293B,6.75,16,600,False,AA,375/1440,,Написати в Telegram
+cloud,food/,section#volunteer.sec.sec--cloud.sec--help,a.btn.btn-primary,#FFFFFF,#B0512F,5.17,16,600,False,AA,375/1440,,050-374-0334
+cloud,food/,section#volunteer.sec.sec--cloud.sec--help,b,#F1F5F9,#1E293B,13.35,17,700,False,AAA,375/1440,,щосуботи о 08:00 ранку
+cloud,food/,section#volunteer.sec.sec--cloud.sec--help,div.fund__pct,#E9A23B,#0F172A,8.24,21.6,600,False,AAA,375/1440,,62%
+cloud,food/,section#volunteer.sec.sec--cloud.sec--help,em,#F1F5F9,#1E293B,13.35,17,400,False,AAA,375/1440,,"Кожна, навіть найменша допомога,"
+cloud,food/,section#volunteer.sec.sec--cloud.sec--help,h2.sec__title,#F1F5F9,#0F172A,16.3,28,600,True,AAA,375/1440,,Як ви можете допомогти?
+cloud,food/,section#volunteer.sec.sec--cloud.sec--help,h3,#F1F5F9,#0F172A,16.3,25.6,600,True,AAA,375/1440,,Куди йдуть ваші пожертви
+cloud,food/,section#volunteer.sec.sec--cloud.sec--help,h4,#F1F5F9,#0F172A,16.3,17.6,700,False,AAA,375/1440,,Продукти
+cloud,food/,section#volunteer.sec.sec--cloud.sec--help,p,#CBD5E1,#0F172A,12.02,14.7,400,False,AAA,375/1440,,"закупівля круп, борошна, овочів,"
+cloud,food/,section#volunteer.sec.sec--cloud.sec--help,p,#F1F5F9,#1E293B,13.35,17,400,False,AAA,375/1440,,Приготування обідів розпочинаєть
+cloud,food/,section#volunteer.sec.sec--cloud.sec--help,p.sec__sub,#CBD5E1,#0F172A,12.02,17,400,False,AAA,375/1440,,Прозорий розподіл коштів місії
+cloud,food/,section#volunteer.sec.sec--cloud.sec--help,span,#F1F5F9,#1E293B,13.35,17,400,False,AAA,375/1440,,"гречка, горох, рис, цукор, борош"
+cloud,food/,section#when-where.sec.sec--facts,a,#645441,#FFFCF5,7.1,12.8,400,False,AAA,375/1440,,Антоніна Вишневська
+cloud,food/,section#when-where.sec.sec--facts,a.btn.btn-primary,#FFFFFF,#B0512F,5.17,16,600,False,AA,375/1440,,Нагодувати
+cloud,food/,section#when-where.sec.sec--facts,div#mealCounter.counter__num,#96570C,#FFFCF5,5.59,33.8,600,True,AAA,375/1440,,5 000 000+
+cloud,food/,section#when-where.sec.sec--facts,div.counter__k,#645441,#FFFCF5,7.1,12.8,400,False,AAA,375/1440,,Гарячих обідів роздано в Україні
+cloud,food/,section#when-where.sec.sec--facts,div.counter__rate,#2B2117,#FFFCF5,15.38,18.4,700,False,AAA,375/1440,,100 грн = 1 обід
+cloud,food/,section#when-where.sec.sec--facts,div.counter__since,#645441,#FFFCF5,7.1,17,400,False,AAA,375/1440,,з 1994 року
+cloud,food/,section#when-where.sec.sec--facts,div.fact__k,#645441,#F4EBDA,6.15,12,600,False,AA,375/1440,,Де
+cloud,food/,section#when-where.sec.sec--facts,div.fact__v,#2B2117,#F4EBDA,13.31,17,700,False,AAA,375/1440,,"Соборна площа,"
+cloud,food/,section#when-where.sec.sec--facts,h2,#2B2117,#FFFCF5,15.38,25.6,600,True,AAA,375/1440,,Із рук у руки. Із серця в серце.
+cloud,food/,section#when-where.sec.sec--facts,p,#645441,#FFFCF5,7.1,17,400,False,AAA,375/1440,,Ми натхненні творити й віддавати
+cloud,food/,section#when-where.sec.sec--facts,p.place__badge,#2B2117,#FFFCF5,15.38,15.2,600,False,AAA,375/1440,,Соборна площа — тут ми роздаємо 
+cloud,food/,section#when-where.sec.sec--facts,span.accent,#96570C,#F4EBDA,4.84,19.6,700,True,AAA,375/1440,,14:00
+cloud,food/,section#when-where.sec.sec--facts,span.place__attr,#645441,#FFFCF5,7.1,12.8,400,False,AAA,375/1440,,Фото:
+cloud,food/,section#when-where.sec.sec--facts,span.place__title,#2B2117,#FFFCF5,15.38,17,600,False,AAA,375/1440,,Так виглядає площа
+cloud,food/,section.food-hero,a,#96570C,#FBF6ED,5.32,17,600,False,AA,375/1440,,"Потрібна допомога? Дивіться, де "
+cloud,food/,section.food-hero,a.btn.btn-ghost,#96570C,#FBF6ED,5.32,16,600,False,AA,375/1440,,Стати волонтером
+cloud,food/,section.food-hero,a.btn.btn-primary,#FFFFFF,#B0512F,5.17,16,600,False,AA,375/1440,,Підтримати
+cloud,food/,section.food-hero,p.food-hero__lede,#645441,#FBF6ED,6.76,17.6,400,False,AA,375/1440,,Гарячі вегетаріанські обіди щосу
+cloud,food/,section.food-hero,span.ffl-brand__name,#2B2117,#FBF6ED,14.64,24,600,True,AAA,375/1440,,Їжа життя
+cloud,food/,section.food-hero,span.hl,#2B2117,#FBF6ED,14.64,33.6,600,True,AAA,375/1440,,Ми годуємо людей
+cloud,food/,section.food-hero,span.pill,#FFFFFF,#B0512F,5.17,12.8,600,False,AA,375/1440,,Благодійна місія
+cloud,food/,section.sec.sec--proof,b,#2B2117,#FFFCF5,15.38,17,700,False,AAA,375/1440,,100 кг
+cloud,food/,section.sec.sec--proof,h2.sec__title,#2B2117,#FBF6ED,14.64,28,600,True,AAA,375/1440,,Наші волонтери в дії
+cloud,food/,section.sec.sec--proof,h3,#2B2117,#FBF6ED,14.64,24,600,True,AAA,375/1440,,Репортаж про наших волонтерів
+cloud,food/,section.sec.sec--proof,h3,#96570C,#FFFCF5,5.59,22.4,600,False,AA,375/1440,,Звіт закупок фонду «Їжа життя»
+cloud,food/,section.sec.sec--proof,p.media-video__cap,#645441,#FBF6ED,6.76,15.2,400,False,AA,375/1440,,"«Шпальта Медіа», квітень 2026"
+cloud,food/,section.sec.sec--proof,p.sec__sub,#645441,#FBF6ED,6.76,17,400,False,AA,375/1440,,Кожної суботи готуємо та роздаєм
+cloud,food/,section.sec.sec--proof,span,#2B2117,#FFFCF5,15.38,17,400,False,AAA,375/1440,,Гречка
+paper,/,body,div#avatarBubble.avatar-bubble,#96570C,#FFFFFF,5.73,13.1,600,False,AA,1440,,Харе Крішна
+paper,/,footer#contacts.site-footer,a,#96570C,#FBF6ED,5.32,15.7,600,False,AA,375/1440,,063-311-7500
+paper,/,footer#contacts.site-footer,p,#645441,#FBF6ED,6.76,14.1,400,False,AA,375/1440,,РО «Релігійна громада свідомості
+paper,/,footer#contacts.site-footer,p.site-footer__line,#2B2117,#FBF6ED,14.64,15.7,400,False,AAA,375/1440,,"вул. Скальда (Комарова), 40А, Че"
+paper,/,footer#contacts.site-footer,span,#2B2117,#FBF6ED,14.64,15.7,400,False,AAA,375/1440,,","
+paper,/,header.site-header,a,#96570C,#FBF0DC,5.07,15.2,400,False,AA,1440,,Головна
+paper,/,header.site-header,a,#96570C,#FFFCF5,5.59,15.2,400,False,AA,1440,,Навчання
+paper,/,header.site-header,b,#96570C,#FFFCF5,5.59,12.5,600,False,AA,375/1440,,ІСККОН ЧЕРНІВЦІ
+paper,/,header.site-header,button.lang-btn,#000000,#FFFCF5,20.49,12.8,400,False,AAA,375/1440,,EN
+paper,/,header.site-header,button.lang-btn,#FFFFFF,#96570C,5.73,12.8,400,False,AA,375/1440,,UK
+paper,/,section#faq.sec.sec--faq,em,#2B2117,#FFFCF5,15.38,17,400,False,AAA,375/1440,,ахімса
+paper,/,section#faq.sec.sec--faq,h2.sec__title,#2B2117,#FBF6ED,14.64,28,600,True,AAA,375/1440,,Часті питання
+paper,/,section#faq.sec.sec--faq,p,#2B2117,#FFFCF5,15.38,17,400,False,AAA,375/1440,,Повна версія – близько 5 годин. 
+paper,/,section#faq.sec.sec--faq,summary,#2B2117,#FFFCF5,15.38,16.8,600,False,AAA,375/1440,,Скільки триває програма?
+paper,/,section#main.sec.sec--welcome,h2.sec__title,#2B2117,#FBF6ED,14.64,28,600,True,AAA,375/1440,,Чи можна просто прийти в неділю 
+paper,/,section#main.sec.sec--welcome,p.lead,#2B2117,#FBF6ED,14.64,18.4,400,False,AAA,375/1440,,Відвідайте нашу недільну програм
+paper,/,section#map.sec.sec--map,a.btn.btn-primary,#FFFFFF,#B0512F,5.17,16,600,False,AA,375/1440,,Прокласти маршрут
+paper,/,section#map.sec.sec--map,b,#2B2117,#FBF6ED,14.64,18.4,700,False,AAA,375/1440,,"вул. Скальда (Комарова), 40А, Че"
+paper,/,section#map.sec.sec--map,h2.sec__title,#2B2117,#FBF6ED,14.64,28,600,True,AAA,375/1440,,Як нас знайти
+paper,/,section#paths.sec.sec--paths,a,#96570C,#FFFCF5,5.59,17,600,False,AA,375/1440,,Обрати курс →
+paper,/,section#paths.sec.sec--paths,h2.sec__title,#2B2117,#FBF6ED,14.64,28,600,True,AAA,375/1440,,"Чим тут можна займатися, крім не"
+paper,/,section#paths.sec.sec--paths,h3,#2B2117,#FFFCF5,15.38,25.6,600,True,AAA,375/1440,,Навчання
+paper,/,section#paths.sec.sec--paths,p,#2B2117,#FFFCF5,15.38,17,400,False,AAA,375/1440,,"Курси ведичної філософії, куліна"
+paper,/,section#paths.sec.sec--paths,p.path__kicker,#96570C,#FFFCF5,5.59,12.8,700,False,AA,375/1440,,Їжа життя
+paper,/,section#paths.sec.sec--paths,p.path__where,#2B2117,#FFFCF5,15.38,17,600,False,AAA,375/1440,,"Соборна площа, щосуботи о 14:00"
+paper,/,section#reviews.sec.sec--reviews,a.btn,#FBF6ED,#2B2117,14.64,16,600,False,AAA,375/1440,,Читати всі відгуки
+paper,/,section#reviews.sec.sec--reviews,a.btn.btn-ghost,#96570C,#F4EBDA,4.84,16,600,False,AA,375/1440,,Залишити відгук
+paper,/,section#reviews.sec.sec--reviews,blockquote,#2B2117,#FFFCF5,15.38,18.4,400,False,AAA,375/1440,,"«Прекрасне місце для тих, хто в "
+paper,/,section#reviews.sec.sec--reviews,div.review__stars,#B77A12,#FFFCF5,3.53,17,400,False,FAIL,375/1440,,★★★★★
+paper,/,section#reviews.sec.sec--reviews,figcaption,#2B2117,#FFFCF5,15.38,17,600,False,AAA,375/1440,,Ірина Михайлюк
+paper,/,section#reviews.sec.sec--reviews,h2.sec__title,#2B2117,#F4EBDA,13.31,28,600,True,AAA,375/1440,,Відгуки відданих і учасників гро
+paper,/,section#schedule.sec.sec--schedule,a.btn.btn-ghost,#96570C,#FFFCF5,5.59,15.2,600,False,AA,375/1440,,Додати в календар
+paper,/,section#schedule.sec.sec--schedule,b,#2B2117,#FBF6ED,14.64,15.2,700,False,AAA,375/1440,,Мангала-араті
+paper,/,section#schedule.sec.sec--schedule,b,#2B2117,#FFFCF5,15.38,15.2,700,False,AAA,375/1440,,Кіртан
+paper,/,section#schedule.sec.sec--schedule,b.next-sunday__date,#96570C,#FFFCF5,5.59,19.2,600,False,AA,375/1440,,", 13:30"
+paper,/,section#schedule.sec.sec--schedule,button.btn.btn-ghost,#96570C,#FFFCF5,5.59,15.2,600,False,AA,375/1440,,Запросити друга
+paper,/,section#schedule.sec.sec--schedule,button.next-sunday__ics,#645441,#FFFCF5,7.1,14.1,400,False,AAA,375/1440,,або завантажте файл .ics
+paper,/,section#schedule.sec.sec--schedule,em,#2B2117,#FBF6ED,14.64,15.2,400,False,AAA,375/1440,,(ранкова служба)
+paper,/,section#schedule.sec.sec--schedule,h2.sec__title,#2B2117,#FBF6ED,14.64,28,600,True,AAA,375/1440,,О котрій усе починається — і скі
+paper,/,section#schedule.sec.sec--schedule,h3,#2B2117,#FBF6ED,14.64,20.8,600,False,AAA,375/1440,,Суботня ранкова програма
+paper,/,section#schedule.sec.sec--schedule,p.note,#645441,#FBF6ED,6.76,15.2,400,False,AA,375/1440,,Святкові програми за вайшнавськи
+paper,/,section#schedule.sec.sec--schedule,p.sec__sub,#645441,#FBF6ED,6.76,17,400,False,AA,375/1440,,Кожної неділі зустрічаємось у на
+paper,/,section#schedule.sec.sec--schedule,span,#2B2117,#FBF6ED,14.64,15.2,400,False,AAA,375/1440,,Лекція зі Шрімад-Бгаґаватам
+paper,/,section#schedule.sec.sec--schedule,span,#2B2117,#FFFCF5,15.38,15.2,400,False,AAA,375/1440,,— оспівування маха-мантри
+paper,/,section#schedule.sec.sec--schedule,span,#96570C,#FFFCF5,5.59,19.2,600,False,AA,375/1440,,25 жовтня
+paper,/,section#schedule.sec.sec--schedule,span.next-sunday__k,#2B2117,#FFFCF5,15.38,19.2,400,False,AAA,375/1440,,Найближча неділя:
+paper,/,section#schedule.sec.sec--schedule,span.t,#96570C,#FBF6ED,5.32,19.2,600,False,AA,375/1440,,08:00
+paper,/,section#schedule.sec.sec--schedule,span.t,#96570C,#FFFCF5,5.59,24,600,True,AAA,375/1440,,13:30
+paper,/,section#visit.sec.sec--visit,a,#96570C,#F4EBDA,4.84,17,600,False,AA,375/1440,,Усі питання →
+paper,/,section#visit.sec.sec--visit,em,#2B2117,#FFFCF5,15.38,17,400,False,AAA,375/1440,,ахімса
+paper,/,section#visit.sec.sec--visit,h2.sec__title,#2B2117,#F4EBDA,13.31,28,600,True,AAA,375/1440,,Що вдягнути — і чи треба щось бр
+paper,/,section#visit.sec.sec--visit,h3,#2B2117,#FFFCF5,15.38,20,600,False,AAA,375/1440,,Чи це часом не секта?
+paper,/,section#visit.sec.sec--visit,p,#2B2117,#FFFCF5,15.38,17,400,False,AAA,375/1440,,Ні. Наш рух є частиною давньої в
+paper,/,section#visit.sec.sec--visit,p.visit__lead,#2B2117,#F4EBDA,13.31,18.4,400,False,AAA,375/1440,,"Ні, просто приходьте в зручному "
+paper,/,section.hero-home,a.btn.btn-primary,#FFFFFF,#B0512F,5.17,16,600,False,AA,375/1440,,Прийти в неділю
+paper,/,section.hero-home,h1#hero-title,#FBF6ED,#1D150E,16.73,32,600,True,AAA,375/1440,,Простір внутрішнього спокою
+paper,/,section.hero-home,p.hero-home__lede,#FBF6ED,#1D150E,16.73,16,400,False,AAA,375/1440,,Центр ведичної культури: недільн
+paper,/,section.hero-home,p.hero-home__when,#FBF6ED,#1D150E,16.73,16.3,600,False,AAA,375/1440,,Щонеділі о 13:30 · вул. Скальда 
+paper,/,section.hero-home,span.hero-home__kicker,#C9A24B,#1D150E,7.51,13.6,600,False,AAA,375/1440,photo@img.hero-home__img,Чернівці · ІСККОН
+paper,/,section.sec.sec--dark.sec--philosophy,a,#C9A24B,#1D150E,7.51,17,400,False,AAA,375/1440,,Бгагавад-гіта
+paper,/,section.sec.sec--dark.sec--philosophy,a.more,#C9A24B,#1D150E,7.51,17,600,False,AAA,375/1440,,До курсів →
+paper,/,section.sec.sec--dark.sec--philosophy,h2.sec__title,#FBF6ED,#1D150E,16.73,28,600,True,AAA,375/1440,,У що ви вірите — і чи обов'язков
+paper,/,section.sec.sec--dark.sec--philosophy,h3,#FBF6ED,#1D150E,16.73,24,600,True,AAA,375/1440,,Лекції з філософії
+paper,/,section.sec.sec--dark.sec--philosophy,p,#FBF6ED,#1D150E,16.73,17,400,False,AAA,375/1440,,"Знайомство з Бгаґавад-Ґітою, зак"
+paper,/,section.sec.sec--dark.sec--philosophy,p.mantra,#C9A24B,#1D150E,7.51,22.4,400,False,AAA,375/1440,,"Харе Крішна, Харе Крішна,"
+paper,/,section.sec.sec--founder,a,#645441,#FBF6ED,6.76,12.5,400,False,AA,375/1440,,CC BY 3.0
+paper,/,section.sec.sec--founder,a,#96570C,#FBF6ED,5.32,17,400,False,AA,375/1440,,Читати у Вікіпедії →
+paper,/,section.sec.sec--founder,b,#2B2117,#FBF6ED,14.64,17,700,False,AAA,375/1440,,А.Ч. Бгактіведанта Свамі Прабгуп
+paper,/,section.sec.sec--founder,figcaption,#645441,#FBF6ED,6.76,14.1,400,False,AA,375/1440,,Скульптурна композиція · фото 20
+paper,/,section.sec.sec--founder,figcaption.founder__cap,#645441,#FBF6ED,6.76,13.6,400,False,AA,375/1440,,"Ранкова прогулянка · Німеччина, "
+paper,/,section.sec.sec--founder,h2.sec__title,#2B2117,#FBF6ED,14.64,28,600,True,AAA,375/1440,,Засновник
+paper,/,section.sec.sec--founder,h3,#2B2117,#FFFCF5,15.38,20,600,False,AAA,375/1440,,Бгаґавад-Ґіта як вона є
+paper,/,section.sec.sec--founder,p,#2B2117,#FBF6ED,14.64,17,400,False,AAA,375/1440,,(1896–1977)
+paper,/,section.sec.sec--founder,p,#2B2117,#FFFCF5,15.38,17,400,False,AAA,375/1440,,Діалог Крішни й Арджуни. Перекла
+paper,/,section.sec.sec--founder,p.founder__credits,#645441,#FBF6ED,6.76,12.5,400,False,AA,375/1440,,Фото й підпис — Wikimedia Common
+paper,/,section.sec.sec--founder,p.sec__sub.books-intro,#645441,#FBF6ED,6.76,17,400,False,AA,375/1440,,Книги в перекладі Шріли Прабгупа
+paper,/,section.sec.sec--gallery,a,#96570C,#FBF6ED,5.32,15.2,400,False,AA,375/1440,,Instagram
+paper,/,section.sec.sec--gallery,h2.sec__title,#2B2117,#FBF6ED,14.64,28,600,True,AAA,375/1440,,Життя храму
+paper,/,section.sec.sec--gallery,p.note,#645441,#FBF6ED,6.76,15.2,400,False,AA,375/1440,,Більше фото — в нашому
+paper,/,section.sec.sec--gallery,p.sec__sub,#645441,#FBF6ED,6.76,17,400,False,AA,375/1440,,"Гаура-пурніма, Чернівці — свято,"
+paper,/,section.sec.sec--steps,h2.sec__title,#2B2117,#F4EBDA,13.31,28,600,True,AAA,375/1440,,"Що буде, коли я зайду всередину?"
+paper,/,section.sec.sec--steps,h3,#2B2117,#FFFCF5,15.38,21.6,600,False,AAA,375/1440,,Прийдіть у неділю
+paper,/,section.sec.sec--steps,p,#2B2117,#FFFCF5,15.38,17,400,False,AAA,375/1440,,Просто прийдіть о 13:30. Нічого 
+paper,/,section.sec.sec--steps,p.sec__sub,#645441,#F4EBDA,6.15,17,400,False,AA,375/1440,,Якщо ви вперше — ось три прості 
+paper,/,section.sec.sec--who,h2.sec__title,#2B2117,#FBF6ED,14.64,28,600,True,AAA,375/1440,,Це тільки для вірян — чи можна і
+paper,/,section.sec.sec--who,li,#2B2117,#FBF6ED,14.64,17,400,False,AAA,375/1440,,Шукаєте Бога та прагнете духовно
+paper,/,section.sec.sec--who,p,#2B2117,#FBF6ED,14.64,21.6,600,False,AAA,375/1440,,"Вам варто завітати до нас, якщо "
+paper,/,section.sec.sec--who,p.who-close,#2B2117,#FBF6ED,14.64,20.8,400,False,AAA,375/1440,,"Це простір для всіх, хто хоче бі"
+paper,404.html,footer.site-footer,a,#96570C,#FBF6ED,5.32,15.7,600,False,AA,375/1440,,063-311-7500
+paper,404.html,footer.site-footer,p,#645441,#FBF6ED,6.76,14.1,400,False,AA,375/1440,,РО «Релігійна громада свідомості
+paper,404.html,footer.site-footer,p.site-footer__line,#2B2117,#FBF6ED,14.64,15.7,400,False,AAA,375/1440,,"вул. Скальда (Комарова), 40А, Че"
+paper,404.html,footer.site-footer,span,#2B2117,#FBF6ED,14.64,15.7,400,False,AAA,375/1440,,","
+paper,404.html,header.site-header,a,#96570C,#FFFCF5,5.59,15.2,400,False,AA,1440,,Головна
+paper,404.html,header.site-header,b,#96570C,#FFFCF5,5.59,12.5,600,False,AA,375/1440,,ІСККОН ЧЕРНІВЦІ
+paper,404.html,header.site-header,button.lang-btn,#000000,#FFFCF5,20.49,12.8,400,False,AAA,375/1440,,EN
+paper,404.html,header.site-header,button.lang-btn,#FFFFFF,#96570C,5.73,12.8,400,False,AA,375/1440,,UK
+paper,404.html,section.page-hero.not-found,a.btn.btn-primary,#FFFFFF,#B0512F,5.17,16,600,False,AA,375/1440,,Повернутися на головну
+paper,404.html,section.page-hero.not-found,h1,#FBF6ED,#1D150E,16.73,32,600,True,AAA,375/1440,,Сторінку не знайдено
+paper,404.html,section.page-hero.not-found,p.lede,#EADFC8,#1D150E,13.63,18.4,400,False,AAA,375/1440,,"Можливо, адресу введено з помилк"
+paper,courses/,body,div#avatarBubble.avatar-bubble,#96570C,#FFFFFF,5.73,13.1,600,False,AA,1440,,Харе Крішна
+paper,courses/,footer#contacts.site-footer,a,#96570C,#FBF6ED,5.32,15.7,600,False,AA,375/1440,,063-311-7500
+paper,courses/,footer#contacts.site-footer,p,#645441,#FBF6ED,6.76,14.1,400,False,AA,375/1440,,РО «Релігійна громада свідомості
+paper,courses/,footer#contacts.site-footer,p.site-footer__line,#2B2117,#FBF6ED,14.64,15.7,400,False,AAA,375/1440,,"вул. Скальда (Комарова), 40А, Че"
+paper,courses/,footer#contacts.site-footer,span,#2B2117,#FBF6ED,14.64,15.7,400,False,AAA,375/1440,,","
+paper,courses/,header.site-header,a,#96570C,#FBF0DC,5.07,15.2,400,False,AA,1440,,Навчання
+paper,courses/,header.site-header,a,#96570C,#FFFCF5,5.59,15.2,400,False,AA,1440,,Головна
+paper,courses/,header.site-header,b,#96570C,#FFFCF5,5.59,12.5,600,False,AA,375/1440,,ІСККОН ЧЕРНІВЦІ
+paper,courses/,header.site-header,button.lang-btn,#000000,#FFFCF5,20.49,12.8,400,False,AAA,375/1440,,EN
+paper,courses/,header.site-header,button.lang-btn,#FFFFFF,#96570C,5.73,12.8,400,False,AA,375/1440,,UK
+paper,courses/,section#main.sec.sec--courses,a,#96570C,#FFFCF5,5.59,24,600,True,AAA,375/1440,,063-311-7500
+paper,courses/,section#main.sec.sec--courses,a.btn.btn-ghost,#96570C,#FFFCF5,5.59,16,600,False,AA,375/1440,,Написати в Telegram
+paper,courses/,section#main.sec.sec--courses,a.btn.btn-primary,#FFFFFF,#B0512F,5.17,16,600,False,AA,375/1440,,Записатися на курс
+paper,courses/,section#main.sec.sec--courses,a.btn.btn-primary.course-join__btn,#FFFFFF,#B0512F,5.17,15.2,600,False,AA,375/1440,,Записатися на курс
+paper,courses/,section#main.sec.sec--courses,b,#2B2117,#FFFCF5,15.38,17,700,False,AAA,375/1440,,Хто Я?
+paper,courses/,section#main.sec.sec--courses,h2,#2B2117,#FFFCF5,15.38,22.4,600,False,AAA,375/1440,,Ведична філософія
+paper,courses/,section#main.sec.sec--courses,li,#2B2117,#FFFCF5,15.38,17,400,False,AAA,375/1440,,— краще зрозуміти себе
+paper,courses/,section#main.sec.sec--courses,p,#2B2117,#FFFCF5,15.38,17,400,False,AAA,375/1440,,Глибоке занурення у ведичну мудр
+paper,courses/,section#main.sec.sec--courses,p.note,#645441,#FFFCF5,7.1,15.2,400,False,AAA,375/1440,,"Telegram, Viber, WhatsApp"
+paper,courses/,section.bookshelf.sec--dark,a,#C9A24B,#1D150E,7.51,14.4,600,False,AAA,375/1440,,Читати →
+paper,courses/,section.bookshelf.sec--dark,b,#FBF6ED,#1D150E,16.73,16.3,700,False,AAA,375/1440,,Бгаґавад-ґіта
+paper,courses/,section.bookshelf.sec--dark,h2,#FBF6ED,#1D150E,16.73,28,600,True,AAA,375/1440,,Ведична бібліотека
+paper,courses/,section.bookshelf.sec--dark,p.lead,#E3D5B8,#1D150E,12.42,17.6,400,False,AAA,375/1440,,Священні тексти українською — чи
+paper,courses/,section.bookshelf.sec--dark,span,#D9C9A8,#1D150E,11.04,14.1,400,False,AAA,375/1440,,Діалог Крішни та Арджуни
+paper,courses/,section.page-hero,h1,#FBF6ED,#1D150E,16.73,32,600,True,AAA,375/1440,,Навчання та розвиток
+paper,courses/,section.page-hero,p.lede,#EADFC8,#1D150E,13.63,18.4,400,False,AAA,375/1440,,Обирайте курс та записуйтесь — б
+paper,courses/,section.scene-band,p.scene-band__line,#FBF6ED,#1D150E,16.73,20.8,600,False,AAA,375/1440,,Кіртан — серце нашої духовної пр
+paper,courses/,section.sec.sec--more,a,#96570C,#FBF6ED,5.32,16.8,400,False,AA,375/1440,,ведичні тексти українською
+paper,courses/,section.sec.sec--more,p.note.more-note,#645441,#FBF6ED,6.76,16.8,400,False,AA,375/1440,,Хочете глибше? Читайте
+paper,donation/,body,div#avatarBubble.avatar-bubble,#96570C,#FFFFFF,5.73,13.1,600,False,AA,1440,,Харе Крішна
+paper,donation/,footer.site-footer,a,#96570C,#FBF6ED,5.32,15.7,600,False,AA,375/1440,,063-311-7500
+paper,donation/,footer.site-footer,p,#645441,#FBF6ED,6.76,14.1,400,False,AA,375/1440,,РО «Релігійна громада свідомості
+paper,donation/,footer.site-footer,p.site-footer__line,#2B2117,#FBF6ED,14.64,15.7,400,False,AAA,375/1440,,"вул. Скальда (Комарова), 40А, Че"
+paper,donation/,footer.site-footer,span,#2B2117,#FBF6ED,14.64,15.7,400,False,AAA,375/1440,,","
+paper,donation/,header.site-header,a,#96570C,#FBF0DC,5.07,15.2,400,False,AA,1440,,Пожертви
+paper,donation/,header.site-header,a,#96570C,#FFFCF5,5.59,15.2,400,False,AA,1440,,Головна
+paper,donation/,header.site-header,b,#96570C,#FFFCF5,5.59,12.5,600,False,AA,375/1440,,ІСККОН ЧЕРНІВЦІ
+paper,donation/,header.site-header,button.lang-btn,#000000,#FFFCF5,20.49,12.8,400,False,AAA,375/1440,,EN
+paper,donation/,header.site-header,button.lang-btn,#FFFFFF,#96570C,5.73,12.8,400,False,AA,375/1440,,UK
+paper,donation/,section#contacts.sec.sec--contacts-food,a.contacts__tel,#96570C,#FFFCF5,5.59,20,700,True,AAA,375/1440,,063-320-3940
+paper,donation/,section#contacts.sec.sec--contacts-food,b,#2B2117,#FFFCF5,15.38,17,700,False,AAA,375/1440,,Ануґатья д.д.:
+paper,donation/,section#contacts.sec.sec--contacts-food,h2.sec__title,#2B2117,#FBF6ED,14.64,28,600,True,AAA,375/1440,,Контакти
+paper,donation/,section#contacts.sec.sec--contacts-food,span.contacts__note,#645441,#FFFCF5,7.1,17,400,False,AAA,375/1440,,"Telegram, Viber, WhatsApp"
+paper,donation/,section#give.sec.sec--give,button.btn.btn-ghost,#96570C,#FFFCF5,5.59,16,600,False,AA,375/1440,,Разова пожертва
+paper,donation/,section#give.sec.sec--give,button.btn.btn-primary,#FFFFFF,#B0512F,5.17,16,600,False,AA,375/1440,,Регулярна пожертва
+paper,donation/,section#give.sec.sec--give,h2.sec__title,#2B2117,#F4EBDA,13.31,28,600,True,AAA,375/1440,,Зробити пожертву
+paper,donation/,section#give.sec.sec--give,h3,#96570C,#FFFCF5,5.59,27.2,600,True,AAA,375/1440,,Поточні потреби храму
+paper,donation/,section#give.sec.sec--give,h3,#96570C,#FFFDF8,5.64,27.2,600,True,AAA,375/1440,,Коло друзів храму
+paper,donation/,section#give.sec.sec--give,p,#645441,#FFFFFF,7.28,14.4,400,False,AAA,375/1440,,Регулярна пожертва — наведіть ка
+paper,donation/,section#give.sec.sec--give,p.donate-hint,#645441,#F4EBDA,6.15,15.2,400,False,AA,375/1440,,Разова — на поточні потреби храм
+paper,donation/,section#give.sec.sec--give,p.give__trust,#2B2117,#F4EBDA,13.31,16.8,400,False,AAA,375/1440,,Кошти спрямовуються на оренду пр
+paper,donation/,section#give.sec.sec--give,p.give__why,#2B2117,#FFFCF5,15.38,17,400,False,AAA,375/1440,,"Разова пожертва — для тих, хто х"
+paper,donation/,section#give.sec.sec--give,p.give__why,#2B2117,#FFFDF8,15.5,17,400,False,AAA,375/1440,,Регулярні щомісячні внески допом
+paper,donation/,section#give.sec.sec--give,p.note,#645441,#F4EBDA,6.15,15.2,400,False,AA,375/1440,,Натисніть кнопку — форма оплати 
+paper,donation/,section#ways.sec.sec--ways,a.btn.btn-ghost,#96570C,#FFFCF5,5.59,16,600,False,AA,375/1440,,Банка Monobank «Їжі життя»
+paper,donation/,section#ways.sec.sec--ways,a.btn.btn-primary,#FFFFFF,#B0512F,5.17,16,600,False,AA,375/1440,,Пожертвувати на храм
+paper,donation/,section#ways.sec.sec--ways,a.ways__more,#96570C,#FFFCF5,5.59,17,600,False,AA,375/1440,,Детальніше про «Їжу життя» →
+paper,donation/,section#ways.sec.sec--ways,h2#ways-title.sec__title,#2B2117,#FBF6ED,14.64,28,600,True,AAA,375/1440,,Куди спрямувати пожертву?
+paper,donation/,section#ways.sec.sec--ways,h3,#96570C,#FFFCF5,5.59,24,600,True,AAA,375/1440,,На храм
+paper,donation/,section#ways.sec.sec--ways,p,#2B2117,#FFFCF5,15.38,17,400,False,AAA,375/1440,,"Оренда приміщення, комунальні по"
+paper,donation/,section#ways.sec.sec--ways,p.ways__lead,#2B2117,#FBF6ED,14.64,17,400,False,AAA,375/1440,,Храм і «Їжа життя» збирають кошт
+paper,donation/,section.page-hero,h1,#FBF6ED,#1D150E,16.73,32,600,True,AAA,375/1440,,Меценати храму
+paper,donation/,section.page-hero,p.lede,#EADFC8,#1D150E,13.63,18.4,400,False,AAA,375/1440,,Наш храм живе та розвивається ви
+paper,donation/,section.scene-band,p.scene-band__line,#FBF6ED,#1D150E,16.73,20.8,600,False,AAA,375/1440,,Ми безмежно вдячні кожному за ще
+paper,donation/,section.sec.sec--req,a,#96570C,#FBF6ED,5.32,15.2,400,False,AA,375/1440,,opendatabot.ua
+paper,donation/,section.sec.sec--req,button.copy,#96570C,#FFFFFF,5.73,14.1,400,False,AA,375/1440,,Копіювати
+paper,donation/,section.sec.sec--req,code#edrpou-val,#2B2117,#F4EBDA,13.31,13.6,400,False,AAA,375/1440,,46285356
+paper,donation/,section.sec.sec--req,code#iban-val,#2B2117,#F4EBDA,13.31,13.6,400,False,AAA,375/1440,,UA563077700000026007111264936
+paper,donation/,section.sec.sec--req,code#purp-val,#2B2117,#F4EBDA,13.31,13.6,400,False,AAA,375/1440,,Добровільна пожертва
+paper,donation/,section.sec.sec--req,code#recv-val,#2B2117,#F4EBDA,13.31,13.6,400,False,AAA,375/1440,,РО «РЕЛІГІЙНА ГРОМАДА СВІДОМОСТІ
+paper,donation/,section.sec.sec--req,div.req__k,#645441,#FFFCF5,7.1,11.5,600,False,AAA,375/1440,,IBAN
+paper,donation/,section.sec.sec--req,h2.sec__title,#2B2117,#FBF6ED,14.64,28,600,True,AAA,375/1440,,Банківські реквізити
+paper,donation/,section.sec.sec--req,p.note,#645441,#FBF6ED,6.76,15.2,400,False,AA,375/1440,,Прозорість: дані організації —
+paper,donation/,section.sec.sec--use,b,#2B2117,#FBF6ED,14.64,18.4,700,False,AAA,375/1440,,регулярні щомісячні внески
+paper,donation/,section.sec.sec--use,em,#645441,#FFFCF5,7.1,14.7,400,False,AAA,375/1440,,(для приготування прасаду)
+paper,donation/,section.sec.sec--use,h2.sec__title,#2B2117,#FBF6ED,14.64,28,600,True,AAA,375/1440,,На що спрямовуються ваші пожертв
+paper,donation/,section.sec.sec--use,p.use__more,#2B2117,#FBF6ED,14.64,18.4,400,False,AAA,375/1440,,Налаштуйте
+paper,donation/,section.sec.sec--use,span,#2B2117,#FFFCF5,15.38,17,600,False,AAA,375/1440,,Оренда приміщення
+paper,food/,body,div#avatarBubble.avatar-bubble,#96570C,#FFFFFF,5.73,13.1,600,False,AA,1440,,Харе Харе
+paper,food/,footer.site-footer,a,#96570C,#FBF6ED,5.32,15.7,600,False,AA,375/1440,,063-311-7500
+paper,food/,footer.site-footer,p,#645441,#FBF6ED,6.76,14.1,400,False,AA,375/1440,,РО «Релігійна громада свідомості
+paper,food/,footer.site-footer,p.site-footer__line,#2B2117,#FBF6ED,14.64,15.7,400,False,AAA,375/1440,,"вул. Скальда (Комарова), 40А, Че"
+paper,food/,footer.site-footer,span,#2B2117,#FBF6ED,14.64,15.7,400,False,AAA,375/1440,,","
+paper,food/,header.site-header,a,#96570C,#FBF0DC,5.07,15.2,400,False,AA,1440,,Їжа життя
+paper,food/,header.site-header,a,#96570C,#FFFCF5,5.59,15.2,400,False,AA,1440,,Головна
+paper,food/,header.site-header,b,#96570C,#FFFCF5,5.59,12.5,600,False,AA,375/1440,,ІСККОН ЧЕРНІВЦІ
+paper,food/,header.site-header,button.lang-btn,#000000,#FFFCF5,20.49,12.8,400,False,AAA,375/1440,,EN
+paper,food/,header.site-header,button.lang-btn,#FFFFFF,#96570C,5.73,12.8,400,False,AA,375/1440,,UK
+paper,food/,section#contacts.sec.sec--contacts-food,a.btn.btn-ghost,#2B2117,#FFFCF5,15.38,15.2,600,False,AAA,375/1440,,Facebook «Їжі життя»
+paper,food/,section#contacts.sec.sec--contacts-food,a.contacts__tel,#96570C,#FFFCF5,5.59,20,700,True,AAA,375/1440,,050-374-0334
+paper,food/,section#contacts.sec.sec--contacts-food,b,#2B2117,#FFFCF5,15.38,17,700,False,AAA,375/1440,,Роман Гунчак:
+paper,food/,section#contacts.sec.sec--contacts-food,h2.sec__title,#2B2117,#FBF6ED,14.64,28,600,True,AAA,375/1440,,Контакти
+paper,food/,section#contacts.sec.sec--contacts-food,span.contacts__note,#645441,#FFFCF5,7.1,17,400,False,AAA,375/1440,,"Telegram, Viber, WhatsApp"
+paper,food/,section#support.sec.sec--support,a,#96570C,#FFFCF5,5.59,15.2,400,False,AA,375/1440,,Monobank-банка
+paper,food/,section#support.sec.sec--support,a#donateBtn.btn.btn-primary.widget__btn,#FFFFFF,#B0512F,5.17,17.6,600,False,AA,375/1440,,·
+paper,food/,section#support.sec.sec--support,button,#2B2117,#FFFFFF,15.76,17,400,False,AAA,375/1440,,100 ₴
+paper,food/,section#support.sec.sec--support,button,#FFFFFF,#96570C,5.73,17,700,False,AA,375/1440,,1000 ₴
+paper,food/,section#support.sec.sec--support,button.copy,#96570C,#FFFFFF,5.73,14.1,400,False,AA,375/1440,,Копіювати
+paper,food/,section#support.sec.sec--support,code,#2B2117,#F4EBDA,13.31,13.6,400,False,AAA,375/1440,,UA563077700000026007111264936
+paper,food/,section#support.sec.sec--support,div.req__k,#645441,#FFFCF5,7.1,11.5,600,False,AAA,375/1440,,IBAN
+paper,food/,section#support.sec.sec--support,div.req__slogan,#96570C,#FFFBF2,5.55,20,400,False,AA,375/1440,,Годуй · Молись · Люби
+paper,food/,section#support.sec.sec--support,div.req__v,#2B2117,#FFFCF5,15.38,14.4,400,False,AAA,375/1440,,РО «РЕЛІГІЙНА ГРОМАДА СВІДОМОСТІ
+paper,food/,section#support.sec.sec--support,h2.sec__title,#2B2117,#F4EBDA,13.31,28,600,True,AAA,375/1440,,Підтримати «Їжу життя»
+paper,food/,section#support.sec.sec--support,h3,#96570C,#FFFCF5,5.59,25.6,600,True,AAA,375/1440,,Подаруй тарілку тепла й любові
+paper,food/,section#support.sec.sec--support,h3,#FBF6ED,#1D150E,16.73,20,600,False,AAA,375/1440,,Банківські реквізити
+paper,food/,section#support.sec.sec--support,p,#645441,#F4EBDA,6.15,17,400,False,AA,375/1440,,Гарячий обід для
+paper,food/,section#support.sec.sec--support,p,#E3D5B8,#1D150E,12.42,14.4,400,False,AAA,375/1440,,Для переказу з картки будь-якого
+paper,food/,section#support.sec.sec--support,p.sec__sub,#645441,#F4EBDA,6.15,17,400,False,AA,375/1440,,Кожна гривня стає гарячим обідом
+paper,food/,section#support.sec.sec--support,p.support__kicker,#645441,#F4EBDA,6.15,12.8,400,False,AA,375/1440,,Підтримайте місію
+paper,food/,section#support.sec.sec--support,p.support__tag,#2B2117,#F4EBDA,13.31,20.8,400,False,AAA,375/1440,,Кожна гривня — це теплий обід
+paper,food/,section#support.sec.sec--support,p.widget__more,#2B2117,#FFFCF5,15.38,15.2,400,False,AAA,375/1440,,·
+paper,food/,section#support.sec.sec--support,p.widget__note,#645441,#FFFCF5,7.1,14.1,400,False,AAA,375/1440,,Оплата карткою · Monobank
+paper,food/,section#support.sec.sec--support,p.widget__sub,#645441,#FFFCF5,7.1,17,400,False,AAA,375/1440,,Обери суму — і подивись на свій 
+paper,food/,section#support.sec.sec--support,span,#FFFFFF,#B0512F,5.17,17.6,600,False,AA,375/1440,,Підтримати
+paper,food/,section#support.sec.sec--support,span#donateAmt,#FFFFFF,#B0512F,5.17,17.6,600,False,AA,375/1440,,1 000
+paper,food/,section#support.sec.sec--support,span#mealCount,#96570C,#F4EBDA,4.84,48,600,True,AAA,375/1440,,10
+paper,food/,section#support.sec.sec--support,span.widget__unit,#645441,#F4EBDA,6.15,17.6,400,False,AA,375/1440,,гарячих обідів
+paper,food/,section#support.sec.sec--support,strong,#96570C,#F4EBDA,4.84,17,700,False,AA,375/1440,,дружньої компанії
+paper,food/,section#volunteer.sec.sec--help,a,#96570C,#FFFCF5,5.59,17,400,False,AA,375/1440,,зробити внесок
+paper,food/,section#volunteer.sec.sec--help,a.btn.btn-ghost,#96570C,#FFFCF5,5.59,16,600,False,AA,375/1440,,Написати в Telegram
+paper,food/,section#volunteer.sec.sec--help,a.btn.btn-primary,#FFFFFF,#B0512F,5.17,16,600,False,AA,375/1440,,050-374-0334
+paper,food/,section#volunteer.sec.sec--help,b,#2B2117,#FFFCF5,15.38,17,700,False,AAA,375/1440,,щосуботи о 08:00 ранку
+paper,food/,section#volunteer.sec.sec--help,div.fund__pct,#96570C,#F4EBDA,4.84,21.6,600,False,AA,375/1440,,62%
+paper,food/,section#volunteer.sec.sec--help,em,#2B2117,#FFFCF5,15.38,17,400,False,AAA,375/1440,,"Кожна, навіть найменша допомога,"
+paper,food/,section#volunteer.sec.sec--help,h2.sec__title,#2B2117,#F4EBDA,13.31,28,600,True,AAA,375/1440,,Як ви можете допомогти?
+paper,food/,section#volunteer.sec.sec--help,h3,#2B2117,#F4EBDA,13.31,25.6,600,True,AAA,375/1440,,Куди йдуть ваші пожертви
+paper,food/,section#volunteer.sec.sec--help,h4,#2B2117,#F4EBDA,13.31,17.6,700,False,AAA,375/1440,,Продукти
+paper,food/,section#volunteer.sec.sec--help,p,#2B2117,#FFFCF5,15.38,17,400,False,AAA,375/1440,,Приготування обідів розпочинаєть
+paper,food/,section#volunteer.sec.sec--help,p,#645441,#F4EBDA,6.15,14.7,400,False,AA,375/1440,,"закупівля круп, борошна, овочів,"
+paper,food/,section#volunteer.sec.sec--help,p.sec__sub,#645441,#F4EBDA,6.15,17,400,False,AA,375/1440,,Прозорий розподіл коштів місії
+paper,food/,section#volunteer.sec.sec--help,span,#2B2117,#FFFCF5,15.38,17,400,False,AAA,375/1440,,"гречка, горох, рис, цукор, борош"
+paper,food/,section#when-where.sec.sec--facts,a,#645441,#FFFCF5,7.1,12.8,400,False,AAA,375/1440,,Антоніна Вишневська
+paper,food/,section#when-where.sec.sec--facts,a.btn.btn-primary,#FFFFFF,#B0512F,5.17,16,600,False,AA,375/1440,,Нагодувати
+paper,food/,section#when-where.sec.sec--facts,div#mealCounter.counter__num,#96570C,#FFFCF5,5.59,33.8,600,True,AAA,375/1440,,5 000 000+
+paper,food/,section#when-where.sec.sec--facts,div.counter__k,#645441,#FFFCF5,7.1,12.8,400,False,AAA,375/1440,,Гарячих обідів роздано в Україні
+paper,food/,section#when-where.sec.sec--facts,div.counter__rate,#2B2117,#FFFCF5,15.38,18.4,700,False,AAA,375/1440,,100 грн = 1 обід
+paper,food/,section#when-where.sec.sec--facts,div.counter__since,#645441,#FFFCF5,7.1,17,400,False,AAA,375/1440,,з 1994 року
+paper,food/,section#when-where.sec.sec--facts,div.fact__k,#645441,#F4EBDA,6.15,12,600,False,AA,375/1440,,Де
+paper,food/,section#when-where.sec.sec--facts,div.fact__v,#2B2117,#F4EBDA,13.31,17,700,False,AAA,375/1440,,"Соборна площа,"
+paper,food/,section#when-where.sec.sec--facts,h2,#2B2117,#FFFCF5,15.38,25.6,600,True,AAA,375/1440,,Із рук у руки. Із серця в серце.
+paper,food/,section#when-where.sec.sec--facts,p,#645441,#FFFCF5,7.1,17,400,False,AAA,375/1440,,Ми натхненні творити й віддавати
+paper,food/,section#when-where.sec.sec--facts,p.place__badge,#2B2117,#FFFCF5,15.38,15.2,600,False,AAA,375/1440,,Соборна площа — тут ми роздаємо 
+paper,food/,section#when-where.sec.sec--facts,span.accent,#96570C,#F4EBDA,4.84,19.6,700,True,AAA,375/1440,,14:00
+paper,food/,section#when-where.sec.sec--facts,span.place__attr,#645441,#FFFCF5,7.1,12.8,400,False,AAA,375/1440,,Фото:
+paper,food/,section#when-where.sec.sec--facts,span.place__title,#2B2117,#FFFCF5,15.38,17,600,False,AAA,375/1440,,Так виглядає площа
+paper,food/,section.food-hero,a,#96570C,#FBF6ED,5.32,17,600,False,AA,375/1440,,"Потрібна допомога? Дивіться, де "
+paper,food/,section.food-hero,a.btn.btn-ghost,#96570C,#FBF6ED,5.32,16,600,False,AA,375/1440,,Стати волонтером
+paper,food/,section.food-hero,a.btn.btn-primary,#FFFFFF,#B0512F,5.17,16,600,False,AA,375/1440,,Підтримати
+paper,food/,section.food-hero,p.food-hero__lede,#645441,#FBF6ED,6.76,17.6,400,False,AA,375/1440,,Гарячі вегетаріанські обіди щосу
+paper,food/,section.food-hero,span.ffl-brand__name,#2B2117,#FBF6ED,14.64,24,600,True,AAA,375/1440,,Їжа життя
+paper,food/,section.food-hero,span.hl,#2B2117,#FBF6ED,14.64,33.6,600,True,AAA,375/1440,,Ми годуємо людей
+paper,food/,section.food-hero,span.pill,#FFFFFF,#B0512F,5.17,12.8,600,False,AA,375/1440,,Благодійна місія
+paper,food/,section.sec.sec--proof,b,#2B2117,#FFFCF5,15.38,17,700,False,AAA,375/1440,,100 кг
+paper,food/,section.sec.sec--proof,h2.sec__title,#2B2117,#FBF6ED,14.64,28,600,True,AAA,375/1440,,Наші волонтери в дії
+paper,food/,section.sec.sec--proof,h3,#2B2117,#FBF6ED,14.64,24,600,True,AAA,375/1440,,Репортаж про наших волонтерів
+paper,food/,section.sec.sec--proof,h3,#96570C,#FFFCF5,5.59,22.4,600,False,AA,375/1440,,Звіт закупок фонду «Їжа життя»
+paper,food/,section.sec.sec--proof,p.media-video__cap,#645441,#FBF6ED,6.76,15.2,400,False,AA,375/1440,,"«Шпальта Медіа», квітень 2026"
+paper,food/,section.sec.sec--proof,p.sec__sub,#645441,#FBF6ED,6.76,17,400,False,AA,375/1440,,Кожної суботи готуємо та роздаєм
+paper,food/,section.sec.sec--proof,span,#2B2117,#FFFCF5,15.38,17,400,False,AAA,375/1440,,Гречка

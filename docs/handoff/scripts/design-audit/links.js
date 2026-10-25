@@ -1,0 +1,7 @@
+const { chromium } = require(process.env.T+'/node_modules/playwright');
+(async()=>{const br=await chromium.launch({channel:'chrome'});
+for(const pal of ['cloud','paper'])for(const pg of ['','courses/','food/','donation/']){const p=await br.newPage({viewport:{width:1440,height:900}});await p.goto((pal==='cloud'?'http://127.0.0.1:8765/iskcon-cv-ua/':'http://127.0.0.1:8771/iskcon-cv-ua/')+pg,{waitUntil:'load'});
+ const r=await p.evaluate(()=>{const parse=c=>c.match(/\d+(\.\d+)?/g).slice(0,3).map(Number);const lum=c=>{const f=v=>{v/=255;return v<=.03928?v/12.92:Math.pow((v+.055)/1.055,2.4)};return .2126*f(c[0])+.7152*f(c[1])+.0722*f(c[2])};const out=[];const seen=new Set();
+ document.querySelectorAll('p a, li a, dd a, figcaption a, span a').forEach(a=>{if(a.closest('nav,.avatar-card,.site-footer'))return;const par=a.parentElement;const ta=getComputedStyle(a),tp=getComputedStyle(par);if(ta.display!=='inline')return;const ca=parse(ta.color),cp=parse(tp.color);const A=lum(ca),P=lum(cp);const cr=(Math.max(A,P)+.05)/(Math.min(A,P)+.05);const k=a.className+par.className;if(seen.has(k))return;seen.add(k);
+  if(!ta.textDecorationLine.includes('underline')&&cr<3)out.push(`no-underline cr-vs-text ${cr.toFixed(2)} ${par.tagName.toLowerCase()}.${par.className} > a.${a.className} «${a.textContent.trim().slice(0,25)}»`)});return out});
+ r.forEach(x=>console.log(pal,pg||'/',x));await p.close()}await br.close()})();
