@@ -378,6 +378,8 @@ body.ds{
   --err-bg:#FBE9E2;--err-ink:#7A2E14;
   --cream:var(--p-paper);--card:var(--p-card);--ink:var(--p-ink);--line:var(--p-line);--muted:var(--p-muted);
   --saffron-dark:var(--p-saffron);--sec-gap:clamp(64px,10vw,128px);
+  /* шкала заголовків (DESIGN_FIX_PLAN, зріз 3): H1 сторінки, H2 секції, H3 картки — два розміри */
+  --fs-h1:clamp(2rem,4.6vw,3.4rem);--fs-h2:clamp(1.75rem,3.2vw,2.5rem);--fs-h3:1.25rem;--fs-h3-lg:1.5rem;
   font-family:Onest,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;font-size:1.0625rem;line-height:1.65}
 .ds h1,.ds h2,.ds h3,.ds .brand b{font-family:Spectral,Georgia,"Times New Roman",serif;font-weight:600;letter-spacing:0}
 .ds a{color:var(--saffron-text)}
@@ -986,6 +988,23 @@ html{touch-action:manipulation;-webkit-tap-highlight-color:rgba(176,81,47,.16)}
 @media(max-width:399.98px){.ds .lang-btn{min-width:34px}}
 /* цифри, що змінюються, на /food */
 .widget__count,#donateAmt{font-variant-numeric:tabular-nums}
+/* ============ Шрифти й шкала заголовків (DESIGN_FIX_PLAN, зріз 3) ============
+   Кнопки — шрифт сторінки, не Arial. Spectral завантажено лише 600 і курсив 400: інших накреслень не просимо
+   (інакше браузер підміняє або синтезує). H1 однаковий на всіх сторінках; H3 — два розміри, міжрядковий 1.2. */
+.ds button{font-family:inherit}
+.ds .visit__lead,.ds .use__more,.ds .next-sunday__when{font-weight:600}
+.ds .visit__lead b,.ds .use__more b,.ds .donate-modal-head b,.ds .next-sunday__when b{font-weight:600}
+/* у Spectral менша висота малих літер, ніж в Onest: курсив у тексті трохи більший, щоб не «падав» */
+.ds em{font-family:Spectral,Georgia,"Times New Roman",serif;font-style:italic;font-weight:400;font-size:1.1em;line-height:1}
+.ds .hero-home h1,.ds .page-hero h1,.ds .food-hero h1{font-size:var(--fs-h1);line-height:1.12}
+.ds .sec__title,.ds .bookshelf h2{font-size:var(--fs-h2);line-height:1.15}
+.ds h3,.ds .course-card h2,.ds .signup h2,.ds .facts__where h2{line-height:1.2}
+.ds .card--side h3,.ds .step h3,.ds .book h3,.ds .visit__card h3,.ds .req__head h3{font-size:var(--fs-h3)}
+.ds .phil-col h3,.ds .path h3,.ds .course-card h2,.ds .signup h2,.ds .facts__where h2,.ds .funds h3,
+.ds .report h3,.ds .media-video h3,.ds .widget h3,.ds .give__card h3,.ds .ways__card h3{font-size:var(--fs-h3-lg)}
+/* цифри, що стоять окремо (суми, час), — однакової ширини */
+#amountBtns button,.fact__v,.counter__rate,.next-sunday__date{font-variant-numeric:tabular-nums}
+
 /* ============ Друк (DESIGN_FIX_PLAN, зріз 2) ============
    На папері: чорний текст на білому за будь-якої палітри; без шапки-меню, аватара, кнопок, відео й фото
    (лишаються логотип, QR-коди та реквізити); реквізити й QR не розриваються між сторінками. */
