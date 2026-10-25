@@ -2,7 +2,7 @@ const { chromium } = require(process.env.T+'/node_modules/playwright');const {PN
 const lum=(r,g,b)=>{const f=v=>{v/=255;return v<=.03928?v/12.92:Math.pow((v+.055)/1.055,2.4)};return .2126*f(r)+.7152*f(g)+.0722*f(b)};
 (async()=>{const br=await chromium.launch({channel:'chrome'});
 for(const pal of ['cloud','paper'])for(const [pg,sel] of [['','.hero-home__text h1, .hero-home__text p, .hero-home__kicker, .hero-home__text a'],['food/','.food-hero h1, .food-hero p'],['courses/','.page-hero h1, .page-hero p'],['donation/','.page-hero h1, .page-hero p, .hero h1, .hero p']])for(const w of [1440,375]){
- const p=await br.newPage({viewport:{width:w,height:900}});await p.goto((pal==='cloud'?'http://127.0.0.1:8765/iskcon-cv-ua/':'http://127.0.0.1:8771/iskcon-cv-ua/')+pg,{waitUntil:'load'});
+ const p=await br.newPage({viewport:{width:w,height:900}});await p.goto((pal==='cloud'?'http://127.0.0.1:8765/iskcon-cv-ua/':(process.env.PAPER||'http://127.0.0.1:8771/iskcon-cv-ua/'))+pg,{waitUntil:'load'});
  await p.addStyleTag({content:'.reveal{opacity:1!important;transform:none!important}*{animation:none!important;transition:none!important}'});await p.waitForTimeout(1200);
  const els=await p.$$(sel);
  for(const e of els.slice(0,6)){if(!(await e.isVisible()))continue;const info=await e.evaluate(x=>{const cs=getComputedStyle(x);return {t:x.textContent.trim().slice(0,30),c:cs.color,fs:parseFloat(cs.fontSize),fw:+cs.fontWeight}});if(!info.t)continue;
