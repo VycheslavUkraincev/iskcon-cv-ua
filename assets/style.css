@@ -1020,3 +1020,9 @@ html:lang(uk) .form-lang{display:none}
 /* Грозовая туча: подвал — адрес и иконки читаемы на туче (фикс находки аудита) */
 .ds .site-footer__contact{color:var(--cloud-text);border-bottom-color:var(--cloud-line)}
 .ds .site-footer__line .ico{color:var(--gold)}
+
+/* Грозовая туча: P0 — светлые острова реквизитов и QR в тёмных секциях (точечно, до системного среза 1) */
+.sec--cloud .req code{color:#2B2117}
+.sec--cloud .copy{color:#96570C;border-color:#E8DCC4}
+.sec--cloud .req__slogan{color:#96570C}
+.sec--cloud .give__card .qr{--ink:#2B2117;--muted:#645441;color:#2B2117}
