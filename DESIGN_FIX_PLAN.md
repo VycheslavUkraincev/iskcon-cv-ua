@@ -42,6 +42,8 @@
 
 ## Срез 2. Печать (№12, 13)
 
+> **Выполнен 25.10.2026** — `DESIGN_FIX_S2_REPORT.md`.
+
 | Пункт | Правка | Эффект | Критерий приёмки |
 |---|---|---|---|
 | 2.1 | `@media print`: скрыть `.site-header nav`, `.lang-switcher`, `.avatar-widget`, `.avatar-card`, `.copy`, `.video-facade`, `.gallery`, `.skip-link`; `*{color:#000!important;background:#fff!important;box-shadow:none!important}`; у `.req`/`.sec--req` — `break-inside:avoid`; ссылкам — `a[href^="http"]::after{content:" (" attr(href) ")"}` в реквизитах | Реквизиты печатаются чёрным на белом на любой палитре | Эмуляция печати (`S/modalprint.js`) на /food и /donation в обеих палитрах: IBAN — `#000`, аватар и шапка скрыты; PDF A4 — реквизиты на одной странице |
