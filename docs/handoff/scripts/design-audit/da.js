@@ -2,7 +2,7 @@
 // env: T (node_modules), OUT (jsonl path), SHOTS (dir, optional), WIDTHS, LANGS, PAL
 const { chromium } = require(process.env.T + '/node_modules/playwright');
 const fs = require('fs');
-const PALS = { cloud: 'http://127.0.0.1:8765/iskcon-cv-ua/', paper: 'http://127.0.0.1:8771/iskcon-cv-ua/' };
+const PALS = { cloud: 'http://127.0.0.1:8765/iskcon-cv-ua/', paper: process.env.PAPER || 'http://127.0.0.1:8771/iskcon-cv-ua/' };
 const PAGES = process.env.PAGES ? process.env.PAGES.split(',').map(x => x === 'home' ? '' : x) : ['', 'courses/', 'food/', 'donation/', '404.html'];
 const WIDTHS = (process.env.WIDTHS || '320,375,390,768,1024,1440').split(',').map(Number);
 const LANGS = (process.env.LANGS || 'uk,en,ro').split(',');

@@ -1,6 +1,6 @@
 // interactive states (normal / hover / focus-visible / active / disabled) per palette, 1440 UK
 const { chromium } = require(process.env.T + '/node_modules/playwright');
-const PALS = { cloud: 'http://127.0.0.1:8765/iskcon-cv-ua/', paper: 'http://127.0.0.1:8771/iskcon-cv-ua/' };
+const PALS = { cloud: 'http://127.0.0.1:8765/iskcon-cv-ua/', paper: process.env.PAPER || 'http://127.0.0.1:8771/iskcon-cv-ua/' };
 const PAGES = ['', 'courses/', 'food/', 'donation/', '404.html'];
 const W = +(process.env.W || 1440);
 (async () => {
