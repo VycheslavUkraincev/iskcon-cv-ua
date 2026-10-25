@@ -67,7 +67,7 @@
 | `assets/festival/gaura-7.jpg` | 783.2 |
 | `assets/festival/gaura-8.jpg` | 606.8 |
 | `assets/festival/gaura-9.jpg` | 517.5 |
-| `assets/ffl-cv-1.jpeg` | 245.7 |
+| `assets/ffl-cv-1.jpeg` **— НЕ удалять (25.10): единственный оригинал hero /food, из него сделан `food-hero-722.webp`** | 245.7 |
 | `assets/food/ffl-carousel-01-563.webp` | 95.1 |
 | `assets/food/ffl-carousel-02-563.webp` | 63.9 |
 | `assets/food/ffl-carousel-03-563.webp` | 35.9 |
