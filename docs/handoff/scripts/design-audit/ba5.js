@@ -1,0 +1,10 @@
+const { chromium } = require(process.env.T+'/node_modules/playwright');const sharp=require(process.env.T+'/node_modules/sharp');
+const O=process.env.HOME+'/projects/iskcon-v2/design-fix-screenshots/slice5/';
+const P={cloud:['http://127.0.0.1:8769/iskcon-cv-ua/','http://127.0.0.1:8765/iskcon-cv-ua/'],paper:['http://127.0.0.1:8771/iskcon-cv-ua/','http://127.0.0.1:8772/iskcon-cv-ua/']};
+const items=[['cloud','food-req','food/','.req',1440,1],['cloud','food-req','food/','.req',375,1],['paper','food-req','food/','.req',1440,1],['paper','food-req','food/','.req',375,1],
+ ['cloud','food-hero-photo','food/','.food-hero__photo',768,2],['cloud','food-carousel','food/','.proof-strip',1440,2]',1440,1]',1440,1]',1440,1],['cloud','home-gallery-photo18','','img[srcset*="photo-18-"]',375,2]];
+(async()=>{const br=await chromium.launch({channel:'chrome'});
+for(const [pal,n,pg,sel,w,dpr] of items){const bufs=[];for(const base of P[pal]){const c=await br.newContext({viewport:{width:w,height:900},deviceScaleFactor:dpr});const p=await c.newPage();await p.goto(base+pg,{waitUntil:'load'});await p.addStyleTag({content:'.reveal{opacity:1!important;transform:none!important}*{animation:none!important;transition:none!important}.avatar-widget,.site-header{visibility:hidden!important}'});const e=p.locator(sel).first();await e.scrollIntoViewIfNeeded();await p.waitForTimeout(400);await p.evaluate(async()=>{await Promise.all([...document.images].filter(i=>!i.complete).map(i=>new Promise(r=>{i.onload=i.onerror=r;setTimeout(r,3000)})))});await p.waitForTimeout(400);bufs.push(await e.screenshot());await c.close()}
+ const ms=await Promise.all(bufs.map(b=>sharp(b).metadata()));const H=Math.max(ms[0].height,ms[1].height);
+ await sharp({create:{width:ms[0].width+ms[1].width+16,height:H,channels:3,background:'#e11'}}).composite([{input:bufs[0],left:0,top:0},{input:bufs[1],left:ms[0].width+16,top:0}]).jpeg({quality:70}).toFile(O+`${pal}-${n}-${w}${dpr>1?'@'+dpr+'x':''}-before-after.jpg`)}
+await br.close()})();
