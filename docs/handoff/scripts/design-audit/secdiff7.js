@@ -1,0 +1,5 @@
+const { chromium } = require(process.env.T+'/node_modules/playwright');
+(async()=>{const br=await chromium.launch({channel:'chrome'});for(const w of [375,1440]){const res=[];for(const port of [8769,8765]){const p=await br.newPage({viewport:{width:w,height:900}});await p.goto(`http://127.0.0.1:${port}/iskcon-cv-ua/`,{waitUntil:'load'});await p.addStyleTag({content:'.reveal{opacity:1!important;transform:none!important}'});
+res.push(await p.evaluate(()=>[...document.querySelectorAll('body > section, body > main > section, section.sec, .hero-home')].map(s=>({k:(s.id||s.className).slice(0,30),h:Math.round(s.getBoundingClientRect().height)}))));
+if(w==1440)res.push(await p.evaluate(()=>[...document.querySelectorAll('.path a,.phil-col .more')].map(a=>{const r=a.getBoundingClientRect();return Math.round(r.top+scrollY)+':'+Math.round(r.height)})));await p.close()}
+const [a,b]=[res[0],w==1440?res[2]:res[1]];a.forEach((s,i)=>{if(b[i]&&s.h!==b[i].h)console.log(w,s.k,s.h,'->',b[i].h)});if(w==1440)console.log('links',res[1].join(' '),'->',res[3].join(' '))}await br.close()})();
