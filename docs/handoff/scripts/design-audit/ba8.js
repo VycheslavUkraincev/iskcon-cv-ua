@@ -1,0 +1,8 @@
+const { chromium } = require(process.env.T+'/node_modules/playwright');const sharp=require(process.env.T+'/node_modules/sharp');
+const O=process.env.HOME+'/projects/iskcon-v2/design-fix-screenshots/slice8-i18n/';
+const items=[['en-home-schedule','','#schedule .schedule-grid','en',1440],['ro-home-philosophy','','.phil-grid','ro',1440],['en-courses-more','courses/','.bookshelf .more-note','en',1440],['ro-food-help','food/','.help','ro',1440],['en-food-widget','food/','.widget__out','en',1440],['ro-donation-lede','donation/','.page-hero .container','ro',1440],['en-donation-trust','donation/','.give__trust','en',1440],['ro-donation-trust','donation/','.give__trust','ro',1440]];
+(async()=>{const br=await chromium.launch({channel:'chrome'});
+for(const [n,pg,sel,l,w] of items){const bufs=[];for(const port of [8769,8765]){const p=await br.newPage({viewport:{width:w,height:900}});await p.goto(`http://127.0.0.1:${port}/iskcon-cv-ua/${pg}?lang=${l}`,{waitUntil:'load'});await p.addStyleTag({content:'.reveal{opacity:1!important;transform:none!important}*{animation:none!important;transition:none!important}.avatar-widget{display:none!important}'});await p.waitForTimeout(500);const e=p.locator(sel).first();await e.scrollIntoViewIfNeeded();await p.waitForTimeout(300);bufs.push(await e.screenshot());await p.close()}
+ const ms=await Promise.all(bufs.map(b=>sharp(b).metadata()));const W=Math.max(ms[0].width,ms[1].width),H=ms[0].height+ms[1].height+12;
+ await sharp({create:{width:W,height:H,channels:3,background:'#e11'}}).composite([{input:bufs[0],left:0,top:0},{input:bufs[1],left:0,top:ms[0].height+12}]).jpeg({quality:70}).toFile(O+n+'-before-after.jpg')}
+await br.close()})();

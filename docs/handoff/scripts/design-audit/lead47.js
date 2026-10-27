@@ -1,0 +1,5 @@
+const { chromium } = require(process.env.T+'/node_modules/playwright');
+(async()=>{const br=await chromium.launch({channel:'chrome'});
+for(const [sel,cands] of [['.page-hero .lede',['720px','min(720px,58ch)','min(720px,52ch)']],['.give__trust',['720px','min(720px,58ch)','min(720px,62ch)']]])for(const mw of cands){const row=[];for(const l of ['uk','en','ro']){const p=await br.newPage({viewport:{width:1440,height:900}});await p.goto('http://127.0.0.1:8765/iskcon-cv-ua/donation/?lang='+l,{waitUntil:'load'});await p.addStyleTag({content:`.ds ${sel}{max-width:${mw}!important}`});await p.waitForTimeout(300);
+row.push(l+':'+JSON.stringify(await p.evaluate(s=>{const e=document.querySelector(s);const rg=document.createRange();rg.selectNodeContents(e);const ys=[...new Set([...rg.getClientRects()].filter(x=>x.width>1).map(x=>Math.round(x.top)))];return {w:Math.round(e.getBoundingClientRect().width),lines:ys.length,cpl:Math.round(e.textContent.replace(/\s+/g,' ').trim().length/ys.length)}},sel)));await p.close()}console.log(sel,mw,row.join(' '))}
+await br.close()})();

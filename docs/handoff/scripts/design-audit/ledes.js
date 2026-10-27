@@ -1,0 +1,3 @@
+const { chromium } = require(process.env.T+'/node_modules/playwright');
+(async()=>{const br=await chromium.launch({channel:'chrome'});for(const port of [8769,8765])for(const pg of ['courses/','404.html'])for(const l of ['uk','en','ro']){const p=await br.newPage({viewport:{width:1440,height:900}});await p.goto(`http://127.0.0.1:${port}/iskcon-cv-ua/${pg}?lang=${l}`,{waitUntil:'load'});
+console.log(port,pg,l,await p.evaluate(()=>{const e=document.querySelector('.page-hero .lede');if(!e)return 'none';const r=e.getBoundingClientRect();return Math.round(r.width)+'x'+Math.round(r.height)}));await p.close()}await br.close()})();
