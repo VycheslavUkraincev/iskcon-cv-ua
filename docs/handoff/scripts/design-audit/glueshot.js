@@ -1,0 +1,4 @@
+const { chromium } = require(process.env.T+'/node_modules/playwright');
+const O=process.env.HOME+'/projects/iskcon-v2/audit-screenshots/reaudit-2026-10-27/';
+(async()=>{const br=await chromium.launch({channel:'chrome'});
+for(const [n,pg,sel,l] of [['en-home-schedule','','#schedule .card--side, #schedule .day','en'],['en-courses-more','courses/','.bookshelf .more-note','en'],['ro-food-widget','food/','.widget__out','ro'],['ro-home-phil','','.phil-col','ro']]){const p=await br.newPage({viewport:{width:1440,height:900}});await p.goto('http://127.0.0.1:8765/iskcon-cv-ua/'+pg+'?lang='+l,{waitUntil:'load'});await p.addStyleTag({content:'.reveal{opacity:1!important;transform:none!important}.avatar-widget{display:none!important}'});await p.waitForTimeout(600);const e=p.locator(sel).first();await e.scrollIntoViewIfNeeded();await p.waitForTimeout(300);await e.screenshot({path:O+'glued-'+n+'.jpg',type:'jpeg',quality:70});await p.close()}await br.close()})();
